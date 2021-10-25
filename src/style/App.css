@@ -1,0 +1,359 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* .App {
+  padding: 0px 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+* .App .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0px;
+  z-index: 1;
+}
+
+* .App .navbar .logo {
+  font-size: 30px;
+  width: 50%;
+  margin-left: 40px;
+}
+
+* .App .navbar .logo .other_color {
+  color: green;
+}
+
+* .App .navbar .pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  width: 50%;
+}
+
+* .App .navbar .pages span {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+* .App .navbar .pages span:hover {
+  text-decoration: underline;
+}
+
+* .App .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+* .App .header .header_info {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .App .header .header_info .info_wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* .App .header .header_info .info_wrapper .first_line {
+  font-size: 30px;
+}
+
+* .App .header .header_info .info_wrapper .name {
+  font-size: 50px;
+}
+
+* .App .header .header_info .info_wrapper .scroll {
+  height: 50px;
+  overflow: hidden;
+}
+
+* .App .header .header_info .info_wrapper .scroll .scroll_wrapper {
+  height: 100%;
+  -webkit-animation: move 4s ease-in-out infinite alternate;
+          animation: move 4s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes move {
+  50% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+@keyframes move {
+  50% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+* .App .header .header_info .info_wrapper .scroll .scroll_item {
+  height: 50px;
+  font-size: 30px;
+  color: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .App .header .header_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+  position: relative;
+}
+
+* .App .header .header_image .background_shape {
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  background-color: #93d193;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+* .App .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+* .App .about .about_image {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .App .about .about_image img {
+  margin-left: 35px;
+  width: 350px;
+  border-radius: 20px;
+  -webkit-box-shadow: -35px -35px 0px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: -35px -35px 0px -1px rgba(0, 0, 0, 0.75);
+}
+
+* .App .about .about_text {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* .App .about .about_text .title {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+* .App .about .about_text .btn {
+  padding: 10px;
+  background-color: #93d193;
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+}
+
+* .App .about .about_text .btn:hover {
+  background-color: green;
+}
+
+* .App .contact {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+* .App .contact .title {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  height: 15%;
+}
+
+* .App .contact .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 85%;
+}
+
+* .App .contact .content .contact_left {
+  width: 50%;
+}
+
+* .App .contact .content .contact_left .get_in_touch h1 {
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+* .App .contact .content .contact_left .phone,
+* .App .contact .content .contact_left .email,
+* .App .contact .content .contact_left .location {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+* .App .contact .content .contact_left .phone i,
+* .App .contact .content .contact_left .email i,
+* .App .contact .content .contact_left .location i {
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+* .App .contact .content .contact_right {
+  width: 50%;
+}
+
+* .App .contact .content .contact_right .contact_form h1 {
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+* .App .contact .content .contact_right .contact_form .name_email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+* .App .contact .content .contact_right .contact_form .name_email .name {
+  width: 50%;
+  margin-right: 10px;
+}
+
+* .App .contact .content .contact_right .contact_form .name_email .name input {
+  width: 100%;
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid lightgray;
+}
+
+* .App .contact .content .contact_right .contact_form .name_email .name input:focus {
+  outline: none;
+}
+
+* .App .contact .content .contact_right .contact_form .name_email .email {
+  width: 50%;
+}
+
+* .App .contact .content .contact_right .contact_form .name_email .email input {
+  width: 100%;
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid lightgray;
+}
+
+* .App .contact .content .contact_right .contact_form .name_email .email input:focus {
+  outline: none;
+}
+
+* .App .contact .content .contact_right .contact_form .subject {
+  margin-bottom: 10px;
+}
+
+* .App .contact .content .contact_right .contact_form .subject input {
+  width: 100%;
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid lightgray;
+}
+
+* .App .contact .content .contact_right .contact_form .subject input:focus {
+  outline: none;
+}
+
+* .App .contact .content .contact_right .contact_form .message textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid lightgray;
+  font-family: "Poppins", sans-serif;
+}
+
+* .App .contact .content .contact_right .contact_form .message textarea:focus {
+  outline: none;
+}
+
+* .App .contact .content .contact_right .contact_form .btn button {
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  background-color: #93d193;
+  cursor: pointer;
+}
+
+* .App .contact .content .contact_right .contact_form .btn button:hover {
+  background-color: green;
+}
+/*# sourceMappingURL=App.css.map */
