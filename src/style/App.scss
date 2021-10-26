@@ -138,10 +138,62 @@
         }
       }
     }
-    .projects {
-      height: 100vh;
+    .projects_wrapper {
       scroll-snap-align: start;
+      height: 100vh;
+      h1 {
+        text-align: center;
+        font-weight: 200;
+      }
+      .projects {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .carousel {
+          padding: 50px;
+          background-color: rgb(233, 233, 233);
+          color: white;
+          border-radius: 10px;
+          .rec-carousel {
+            .rec-arrow-left {
+            color: white;
+          }
+          .rec-arrow-right {
+            color: white;
+          }
+          }
+          .project_item {
+            width: 270px;
+            height: 270px;
+            overflow: hidden;
+            margin: 0 5px;
+            position: relative;
+            border-radius: 7px;
+            &:hover i {
+              display: block;
+              position: absolute;
+              bottom: 10px;
+              right: 20px;
+              z-index: 1;
+              font-size: 30px;
+            }
+            img {
+              height: 100%;
+              transition: all 0.3s ease;
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+            i {
+              display: none;
+              color: gray;
+            }
+          }
+        }
+      }
     }
+
     .contact {
       height: 100vh;
       scroll-snap-align: start;
@@ -191,7 +243,7 @@
                   font-size: 17px;
                   border: 2px solid lightgray;
                   &:focus {
-                      outline: none;
+                    outline: none;
                   }
                 }
               }
@@ -205,7 +257,7 @@
                   border: 2px solid lightgray;
                   &:focus {
                     outline: none;
-                }
+                  }
                 }
               }
             }
@@ -217,7 +269,7 @@
                 font-size: 17px;
                 border: 2px solid lightgray;
                 &:focus {
-                    outline: none;
+                  outline: none;
                 }
               }
             }
@@ -229,22 +281,22 @@
                 border: 2px solid lightgray;
                 font-family: "Poppins", sans-serif;
                 &:focus {
-                    outline: none;
+                  outline: none;
                 }
               }
             }
             .btn {
-                button {
-                    color: white;
-                    padding: 10px;
-                    font-size: 18px;
-                    border: none;
-                    background-color: rgb(147, 209, 147);
-                    cursor: pointer;
-                    &:hover {
-                        background-color: green;
-                    }
+              button {
+                color: white;
+                padding: 10px;
+                font-size: 18px;
+                border: none;
+                background-color: rgb(147, 209, 147);
+                cursor: pointer;
+                &:hover {
+                  background-color: green;
                 }
+              }
             }
           }
         }
