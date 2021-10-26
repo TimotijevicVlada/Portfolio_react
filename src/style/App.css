@@ -225,6 +225,11 @@
   background-color: green;
 }
 
+* .App .projects {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
 * .App .contact {
   height: 100vh;
   scroll-snap-align: start;

@@ -7,9 +7,9 @@ const Contact = () => {
             <div className="content">
                 <div className="contact_left">
                     <div className="get_in_touch"><h1>Get in touch</h1></div>
-                    <div className="phone"><i class="fas fa-phone"></i>+381631188180</div>
-                    <div className="email"><i class="fas fa-envelope"></i>timotijevicvlada@gmail.com</div>
-                    <div className="location"><i class="fas fa-map-marker-alt"></i>Belgrade, Serbia</div>
+                    <div className="phone"><i className="fas fa-phone"></i>+381631188180</div>
+                    <div className="email"><i className="fas fa-envelope"></i>timotijevicvlada@gmail.com</div>
+                    <div className="location"><i className="fas fa-map-marker-alt"></i>Belgrade, Serbia</div>
                 </div>
                 <div className="contact_right">
                     <div className="contact_form">
