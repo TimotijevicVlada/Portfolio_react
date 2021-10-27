@@ -3,6 +3,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 * .App {
@@ -57,7 +58,12 @@
   cursor: pointer;
 }
 
-* .App .navbar .pages span:hover {
+* .App .navbar .pages span a {
+  color: black;
+  text-decoration: none;
+}
+
+* .App .navbar .pages span a:hover {
   text-decoration: underline;
 }
 
@@ -141,6 +147,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+* .App .header .header_info .info_wrapper .social_network i {
+  font-size: 30px;
+  margin: 10px 10px 0px 0px;
+  cursor: pointer;
 }
 
 * .App .header .header_image {
@@ -249,7 +261,8 @@
 
 * .App .projects_wrapper .projects .carousel {
   padding: 50px;
-  background-color: #e9e9e9;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(126, 44, 44, 0.2);
+          box-shadow: 0px 0px 10px 5px rgba(126, 44, 44, 0.2);
   color: white;
   border-radius: 10px;
 }
@@ -266,18 +279,26 @@
   width: 270px;
   height: 270px;
   overflow: hidden;
-  margin: 0 5px;
+  margin: 15px 5px;
   position: relative;
   border-radius: 7px;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(126, 44, 44, 0.2);
+          box-shadow: 0px 0px 10px 5px rgba(126, 44, 44, 0.2);
 }
 
-* .App .projects_wrapper .projects .carousel .project_item:hover i {
+* .App .projects_wrapper .projects .carousel .project_item:hover .hidden {
   display: block;
   position: absolute;
   bottom: 10px;
-  right: 20px;
+  right: 55px;
   z-index: 1;
   font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 * .App .projects_wrapper .projects .carousel .project_item img {
@@ -291,9 +312,77 @@
           transform: scale(1.1);
 }
 
-* .App .projects_wrapper .projects .carousel .project_item i {
+* .App .projects_wrapper .projects .carousel .project_item .hidden {
+  background-color: white;
   display: none;
   color: gray;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+* .App .projects_wrapper .projects .carousel .project_item .hidden .name {
+  font-size: 17px;
+  margin-right: 10px;
+}
+
+* .App .technologies {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+* .App .technologies h1 {
+  text-align: center;
+  font-weight: 200;
+}
+
+* .App .technologies .tech_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 70px;
+}
+
+* .App .technologies .tech_inner div {
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(126, 44, 44, 0.2);
+          box-shadow: 0px 0px 10px 5px rgba(126, 44, 44, 0.2);
+  width: 270px;
+  height: 270px;
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+* .App .technologies .tech_inner div i {
+  font-size: 100px;
+}
+
+* .App .technologies .tech_inner div .jquery {
+  width: 130px;
+}
+
+* .App .technologies .tech_inner div .mysql {
+  width: 120px;
+}
+
+* .App .technologies .tech_inner div .vs_code {
+  width: 95px;
 }
 
 * .App .contact {

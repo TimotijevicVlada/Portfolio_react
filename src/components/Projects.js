@@ -11,7 +11,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="projects_wrapper">
+    <div className="projects_wrapper" id="projects">
       <h1>Projects</h1>
       <div className="projects">
         <Carousel className="carousel" breakPoints={breakPoints}>
@@ -20,7 +20,12 @@ const Projects = () => {
               <a href={item.link} target="_blank" rel="noreferrer">
                 <img src={`products_img/${item.img}`} alt={item.id} />
               </a>
-              <i className="fas fa-eye"></i>
+              <div className="hidden">
+                <span className="name">{item.name}</span>
+                <i className="fas fa-eye"></i>
+              </div>
+              
+
             </div>
           ))}
         </Carousel>

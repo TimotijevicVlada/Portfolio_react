@@ -3,7 +3,7 @@ import Me from "../img/image_me.png";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="header" id="header">
       <div className="header_info">
         <div className="info_wrapper">
           <span className="first_line">Hello, my name is</span>
@@ -16,6 +16,10 @@ const Header = () => {
             </div>
           </div>
           <p className="text">Some text about what I am doing...</p>
+          <div className="social_network">
+            <i className="fab fa-github"></i>
+            <i className="fab fa-linkedin"></i>
+          </div>
         </div>
       </div>
       <div className="header_image">
