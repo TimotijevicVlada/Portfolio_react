@@ -17,14 +17,25 @@
   overflow-y: scroll;
 }
 
-* .App .navbar {
-  position: fixed;
+* .App .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+* .App .header .navbar {
+  position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -32,17 +43,18 @@
   z-index: 1;
 }
 
-* .App .navbar .logo {
+* .App .header .navbar .logo {
   font-size: 30px;
   width: 50%;
-  margin-left: 40px;
+  position: fixed;
+  left: 40px;
 }
 
-* .App .navbar .logo .other_color {
+* .App .header .navbar .logo .other_color {
   color: #3cd070;
 }
 
-* .App .navbar .pages {
+* .App .header .navbar .pages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,26 +65,32 @@
   width: 50%;
 }
 
-* .App .navbar .pages span {
+* .App .header .navbar .pages span {
   margin-right: 10px;
   cursor: pointer;
 }
 
-* .App .navbar .pages span a {
+* .App .header .navbar .pages span a {
   color: black;
   text-decoration: none;
 }
 
-* .App .navbar .pages span a:hover {
+* .App .header .navbar .pages span a:hover {
   text-decoration: underline;
 }
 
-* .App .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100vh;
-  scroll-snap-align: start;
+* .App .header .fa-chevron-up {
+  position: fixed;
+  right: 80px;
+  bottom: 30px;
+  font-size: 30px;
+  color: gray;
+  padding: 15px;
+  cursor: pointer;
+}
+
+* .App .header .fa-chevron-up:hover {
+  color: black;
 }
 
 * .App .header .header_info {
@@ -149,10 +167,20 @@
           align-items: center;
 }
 
-* .App .header .header_info .info_wrapper .social_network i {
+* .App .header .header_info .info_wrapper .social_network a {
+  text-decoration: none;
+  color: black;
+}
+
+* .App .header .header_info .info_wrapper .social_network a i {
   font-size: 30px;
   margin: 10px 10px 0px 0px;
   cursor: pointer;
+  cursor: pointer;
+}
+
+* .App .header .header_info .info_wrapper .social_network a i:hover {
+  color: #3cd070;
 }
 
 * .App .header .header_image {
@@ -220,6 +248,10 @@
   font-weight: 200;
 }
 
+* .App .about .about_text .text {
+  text-indent: 20px;
+}
+
 * .App .about .about_text .btn {
   padding: 10px;
   background-color: #3cd070;
@@ -244,6 +276,7 @@
 * .App .projects_wrapper h1 {
   text-align: center;
   font-weight: 200;
+  padding-top: 20px;
 }
 
 * .App .projects_wrapper .projects {
@@ -337,14 +370,18 @@
 }
 
 * .App .projects_wrapper .projects .carousel .project_item:hover .hidden {
-  display: block;
-  position: absolute;
-  bottom: 10px;
-  right: 55px;
-  z-index: 1;
-  font-size: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+  right: 30px;
+  z-index: 1;
+  font-size: 30px;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -383,6 +420,7 @@
 * .App .technologies h1 {
   text-align: center;
   font-weight: 200;
+  padding-top: 20px;
 }
 
 * .App .technologies .tech_inner {
@@ -441,9 +479,8 @@
 
 * .App .contact .title {
   text-align: center;
-  padding: 20px;
+  padding-top: 20px;
   font-size: 30px;
-  height: 15%;
 }
 
 * .App .contact .content {
@@ -460,7 +497,7 @@
   width: 50%;
 }
 
-* .App .contact .content .contact_left .get_in_touch h1 {
+* .App .contact .content .contact_left .get_in_touch h2 {
   font-weight: 200;
   margin-bottom: 20px;
 }
@@ -479,11 +516,29 @@
   margin-right: 20px;
 }
 
+* .App .contact .content .contact_left .phone .fa-phone,
+* .App .contact .content .contact_left .email .fa-phone,
+* .App .contact .content .contact_left .location .fa-phone {
+  color: green;
+}
+
+* .App .contact .content .contact_left .phone .fa-envelope,
+* .App .contact .content .contact_left .email .fa-envelope,
+* .App .contact .content .contact_left .location .fa-envelope {
+  color: blue;
+}
+
+* .App .contact .content .contact_left .phone .fa-map-marker-alt,
+* .App .contact .content .contact_left .email .fa-map-marker-alt,
+* .App .contact .content .contact_left .location .fa-map-marker-alt {
+  color: red;
+}
+
 * .App .contact .content .contact_right {
   width: 50%;
 }
 
-* .App .contact .content .contact_right .contact_form h1 {
+* .App .contact .content .contact_right .contact_form h2 {
   font-weight: 200;
   margin-bottom: 10px;
 }
@@ -575,5 +630,15 @@
 
 * .App .contact .content .contact_right .contact_form .btn .msg_successfull i {
   font-size: 20px;
+}
+
+* .App .contact .footer {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+* .App .contact .footer span {
+  color: #3cd070;
 }
 /*# sourceMappingURL=App.css.map */

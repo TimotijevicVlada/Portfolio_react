@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Navbar = () => {
     return (
@@ -9,7 +9,6 @@ const Navbar = () => {
                 </span>
             </div>
             <div className="pages">
-                <span><a href="#header">Home</a></span>
                 <span><a href="#about">About</a></span>
                 <span><a href="#projects">Projects</a></span>
                 <span><a href="#tech">Technologies</a></span>

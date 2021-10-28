@@ -24,8 +24,6 @@ const Projects = () => {
                 <span className="name">{item.name}</span>
                 <i className="fas fa-eye"></i>
               </div>
-              
-
             </div>
           ))}
         </Carousel>

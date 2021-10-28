@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
+import Footer from "./Footer";
 
 const Contact = () => {
 
@@ -34,7 +35,7 @@ const Contact = () => {
       <div className="content">
         <div className="contact_left">
           <div className="get_in_touch">
-            <h1>Get in touch</h1>
+            <h2>Get in touch</h2>
           </div>
           <div className="phone">
             <i className="fas fa-phone"></i>+381631188180
@@ -48,7 +49,7 @@ const Contact = () => {
         </div>
         <div className="contact_right">
           <form className="contact_form" ref={formRef} onSubmit={handleSubmit}>
-            <h1>Message me</h1>
+            <h2>Message me</h2>
             <div className="name_email">
               <div className="name">
                 <input type="text" name="user_name" placeholder="Name" />
@@ -75,6 +76,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

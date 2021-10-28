@@ -7,7 +7,7 @@ export const projects = [
     },
     {
         id: 2,
-        name: "Web shop",
+        name: "Web shop react",
         img: "webshop_shirts.JPG",
         link: "https://react-webshop-vlada.netlify.app/"
     },
