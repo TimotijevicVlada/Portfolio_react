@@ -11,8 +11,8 @@ const Header = () => {
           <div className="scroll">
             <div className="scroll_wrapper">
               <div className="scroll_item">Web Developer</div>
+              <div className="scroll_item">Designer</div>
               <div className="scroll_item">Content Creator</div>
-              <div className="scroll_item">UI/UX Designer</div>
             </div>
           </div>
           <p className="text">Some text about what I am doing...</p>

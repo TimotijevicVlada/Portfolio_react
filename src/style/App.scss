@@ -24,7 +24,7 @@
         width: 50%;
         margin-left: 40px;
         .other_color {
-          color: green;
+          color: rgb(60, 208, 112);
         }
       }
       .pages {
@@ -81,11 +81,10 @@
             .scroll_item {
               height: 50px;
               font-size: 30px;
-              color: green;
+              color: rgb(60, 208, 112);
               display: flex;
               align-items: center;
             }
-            
           }
           .social_network {
             i {
@@ -103,7 +102,7 @@
         position: relative;
         .background_shape {
           clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
-          background-color: rgb(147, 209, 147);
+          background-color: rgb(60, 208, 112);
           width: 100%;
           height: 100%;
           position: absolute;
@@ -122,7 +121,6 @@
         img {
           margin-left: 35px;
           width: 350px;
-          border-radius: 20px;
           box-shadow: -35px -35px 0px -1px rgba(0, 0, 0, 0.75);
         }
       }
@@ -137,7 +135,7 @@
         }
         .btn {
           padding: 10px;
-          background-color: rgb(147, 209, 147);
+          background-color: rgb(60, 208, 112);
           color: white;
           margin-top: 20px;
           text-align: center;
@@ -165,25 +163,53 @@
         flex-wrap: wrap;
         .carousel {
           padding: 50px;
-          box-shadow: 0px 0px 10px 5px rgba(126, 44, 44, 0.2);
+          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
           color: white;
-          border-radius: 10px;
           .rec-carousel {
             .rec-arrow-left {
-            color: white;
+              color: white;
+              background-color: rgb(157, 248, 189);
+              box-shadow: none;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              &:hover {
+                background-color: rgb(60, 208, 112);
+              }
+            }
+            .rec-arrow-right {
+              color: white;
+              background-color: rgb(157, 248, 189);
+              box-shadow: none;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              &:hover {
+                background-color: rgb(60, 208, 112);
+              }
+            }
           }
-          .rec-arrow-right {
-            color: white;
+          .rec-pagination {
+            display: flex;
+            align-items: center;
+            .rec-dot {
+              box-shadow: none;
+              border: 1px solid rgb(60, 208, 112);
+            }
+            .rec-dot_active {
+              background-color: rgb(60, 208, 112);
+              width: 14px;
+              height: 14px;
+            }
           }
-          }
+
           .project_item {
             width: 270px;
             height: 270px;
             overflow: hidden;
             margin: 15px 5px;
             position: relative;
-            border-radius: 7px;
-            box-shadow: 0px 0px 10px 5px rgba(126, 44, 44, 0.2);
+            box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
             &:hover .hidden {
               display: block;
               position: absolute;
@@ -207,7 +233,7 @@
               color: gray;
               padding: 5px 10px;
               border-radius: 20px;
-              
+
               .name {
                 font-size: 17px;
                 margin-right: 10px;
@@ -229,8 +255,8 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         margin-top: 70px;
-        div { 
-          box-shadow: 0px 0px 10px 5px rgba(126, 44, 44, 0.2);
+        div {
+          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
           width: 270px;
           height: 270px;
           margin: 5px;
@@ -238,7 +264,6 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          border-radius: 10px;
           i {
             font-size: 100px;
           }
@@ -302,7 +327,7 @@
                   width: 100%;
                   padding: 5px;
                   font-size: 17px;
-                  border: 2px solid lightgray;
+                  border: 1px solid lightgray;
                   &:focus {
                     outline: none;
                   }
@@ -315,7 +340,7 @@
                   width: 100%;
                   padding: 5px;
                   font-size: 17px;
-                  border: 2px solid lightgray;
+                  border: 1px solid lightgray;
                   &:focus {
                     outline: none;
                   }
@@ -328,7 +353,7 @@
                 width: 100%;
                 padding: 5px;
                 font-size: 17px;
-                border: 2px solid lightgray;
+                border: 1px solid lightgray;
                 &:focus {
                   outline: none;
                 }
@@ -339,7 +364,7 @@
                 width: 100%;
                 padding: 5px;
                 font-size: 17px;
-                border: 2px solid lightgray;
+                border: 1px solid lightgray;
                 font-family: "Poppins", sans-serif;
                 &:focus {
                   outline: none;
@@ -352,10 +377,19 @@
                 padding: 10px;
                 font-size: 18px;
                 border: none;
-                background-color: rgb(147, 209, 147);
+                background-color: rgb(60, 208, 112);
                 cursor: pointer;
                 &:hover {
                   background-color: green;
+                }
+              }
+              .msg_successfull {
+                margin-left: 20px;
+                color: green;
+                padding: 5px;
+                border: 1px solid green;
+                i {
+                  font-size: 20px;
                 }
               }
             }

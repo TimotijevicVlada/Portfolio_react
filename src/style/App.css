@@ -39,7 +39,7 @@
 }
 
 * .App .navbar .logo .other_color {
-  color: green;
+  color: #3cd070;
 }
 
 * .App .navbar .pages {
@@ -140,7 +140,7 @@
 * .App .header .header_info .info_wrapper .scroll .scroll_item {
   height: 50px;
   font-size: 30px;
-  color: green;
+  color: #3cd070;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,7 +169,7 @@
 * .App .header .header_image .background_shape {
   -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
-  background-color: #93d193;
+  background-color: #3cd070;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -197,7 +197,6 @@
 * .App .about .about_image img {
   margin-left: 35px;
   width: 350px;
-  border-radius: 20px;
   -webkit-box-shadow: -35px -35px 0px -1px rgba(0, 0, 0, 0.75);
           box-shadow: -35px -35px 0px -1px rgba(0, 0, 0, 0.75);
 }
@@ -223,7 +222,7 @@
 
 * .App .about .about_text .btn {
   padding: 10px;
-  background-color: #93d193;
+  background-color: #3cd070;
   color: white;
   margin-top: 20px;
   text-align: center;
@@ -261,18 +260,70 @@
 
 * .App .projects_wrapper .projects .carousel {
   padding: 50px;
-  -webkit-box-shadow: 0px 0px 10px 5px rgba(126, 44, 44, 0.2);
-          box-shadow: 0px 0px 10px 5px rgba(126, 44, 44, 0.2);
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
   color: white;
-  border-radius: 10px;
 }
 
 * .App .projects_wrapper .projects .carousel .rec-carousel .rec-arrow-left {
   color: white;
+  background-color: #9df8bd;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .App .projects_wrapper .projects .carousel .rec-carousel .rec-arrow-left:hover {
+  background-color: #3cd070;
 }
 
 * .App .projects_wrapper .projects .carousel .rec-carousel .rec-arrow-right {
   color: white;
+  background-color: #9df8bd;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .App .projects_wrapper .projects .carousel .rec-carousel .rec-arrow-right:hover {
+  background-color: #3cd070;
+}
+
+* .App .projects_wrapper .projects .carousel .rec-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .App .projects_wrapper .projects .carousel .rec-pagination .rec-dot {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #3cd070;
+}
+
+* .App .projects_wrapper .projects .carousel .rec-pagination .rec-dot_active {
+  background-color: #3cd070;
+  width: 14px;
+  height: 14px;
 }
 
 * .App .projects_wrapper .projects .carousel .project_item {
@@ -281,9 +332,8 @@
   overflow: hidden;
   margin: 15px 5px;
   position: relative;
-  border-radius: 7px;
-  -webkit-box-shadow: 0px 0px 10px 5px rgba(126, 44, 44, 0.2);
-          box-shadow: 0px 0px 10px 5px rgba(126, 44, 44, 0.2);
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
 }
 
 * .App .projects_wrapper .projects .carousel .project_item:hover .hidden {
@@ -348,8 +398,8 @@
 }
 
 * .App .technologies .tech_inner div {
-  -webkit-box-shadow: 0px 0px 10px 5px rgba(126, 44, 44, 0.2);
-          box-shadow: 0px 0px 10px 5px rgba(126, 44, 44, 0.2);
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
   width: 270px;
   height: 270px;
   margin: 5px;
@@ -366,7 +416,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 10px;
 }
 
 * .App .technologies .tech_inner div i {
@@ -455,7 +504,7 @@
   width: 100%;
   padding: 5px;
   font-size: 17px;
-  border: 2px solid lightgray;
+  border: 1px solid lightgray;
 }
 
 * .App .contact .content .contact_right .contact_form .name_email .name input:focus {
@@ -470,7 +519,7 @@
   width: 100%;
   padding: 5px;
   font-size: 17px;
-  border: 2px solid lightgray;
+  border: 1px solid lightgray;
 }
 
 * .App .contact .content .contact_right .contact_form .name_email .email input:focus {
@@ -485,7 +534,7 @@
   width: 100%;
   padding: 5px;
   font-size: 17px;
-  border: 2px solid lightgray;
+  border: 1px solid lightgray;
 }
 
 * .App .contact .content .contact_right .contact_form .subject input:focus {
@@ -496,7 +545,7 @@
   width: 100%;
   padding: 5px;
   font-size: 17px;
-  border: 2px solid lightgray;
+  border: 1px solid lightgray;
   font-family: "Poppins", sans-serif;
 }
 
@@ -509,11 +558,22 @@
   padding: 10px;
   font-size: 18px;
   border: none;
-  background-color: #93d193;
+  background-color: #3cd070;
   cursor: pointer;
 }
 
 * .App .contact .content .contact_right .contact_form .btn button:hover {
   background-color: green;
+}
+
+* .App .contact .content .contact_right .contact_form .btn .msg_successfull {
+  margin-left: 20px;
+  color: green;
+  padding: 5px;
+  border: 1px solid green;
+}
+
+* .App .contact .content .contact_right .contact_form .btn .msg_successfull i {
+  font-size: 20px;
 }
 /*# sourceMappingURL=App.css.map */
