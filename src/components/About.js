@@ -1,7 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import Me from "../img/about_img.jpg";
+import resume from "../resume/resume.pdf";
 
 const About = () => {
+
+  const [download, setDownload] = useState(false);
+
+
   return (
     <div className="about" id="about">
       <div className="about_image">
@@ -23,7 +28,10 @@ const About = () => {
         <p className="text">
         In the future I have the ambition to become a complete Front End Developer with knowledge of few frameworks as well as to learn some of the Back End technologies.
         </p>
-        <button onClick={() => alert("It's should be the CV download!")} className="btn">Download CV</button>
+        <div className="download">
+          <a href={resume} onClick={() => setDownload(true)} className="download_btn" download>Resume<i className="fas fa-download"></i></a>
+          {download && <span className="download_msg">Downloaded successfuly <i className="fas fa-check"></i></span>}
+        </div>
       </div>
     </div>
   );

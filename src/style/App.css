@@ -65,6 +65,10 @@
   width: 50%;
 }
 
+* .App .header .navbar .pages .exit_menu {
+  display: none;
+}
+
 * .App .header .navbar .pages span {
   margin-right: 10px;
   cursor: pointer;
@@ -79,6 +83,10 @@
   text-decoration: underline;
 }
 
+* .App .header .navbar .menu_bars {
+  display: none;
+}
+
 * .App .header .fa-chevron-up {
   position: fixed;
   right: 80px;
@@ -87,6 +95,7 @@
   color: gray;
   padding: 15px;
   cursor: pointer;
+  z-index: 3;
 }
 
 * .App .header .fa-chevron-up:hover {
@@ -252,8 +261,13 @@
   text-indent: 20px;
 }
 
-* .App .about .about_text .btn {
-  padding: 10px;
+* .App .about .about_text .download {
+  margin-top: 20px;
+}
+
+* .App .about .about_text .download .download_btn {
+  text-decoration: none;
+  padding: 5px 10px;
   background-color: #3cd070;
   color: white;
   margin-top: 20px;
@@ -264,31 +278,40 @@
   width: 150px;
 }
 
-* .App .about .about_text .btn:hover {
+* .App .about .about_text .download .download_btn:hover {
   background-color: green;
+}
+
+* .App .about .about_text .download .download_btn i {
+  margin-left: 10px;
+}
+
+* .App .about .about_text .download .download_msg {
+  margin-left: 20px;
+  color: green;
+  border: 1px solid green;
+  padding: 5px;
 }
 
 * .App .projects_wrapper {
   scroll-snap-align: start;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 * .App .projects_wrapper h1 {
   text-align: center;
   font-weight: 200;
-  padding-top: 20px;
-}
-
-* .App .projects_wrapper .projects {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  margin: 20px 0px;
 }
 
 * .App .projects_wrapper .projects .carousel {
@@ -415,12 +438,22 @@
 * .App .technologies {
   height: 100vh;
   scroll-snap-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 * .App .technologies h1 {
   text-align: center;
   font-weight: 200;
-  padding-top: 20px;
+  margin: 20px 0px;
 }
 
 * .App .technologies .tech_inner {
@@ -432,7 +465,6 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-top: 70px;
 }
 
 * .App .technologies .tech_inner div {
@@ -473,24 +505,31 @@
 }
 
 * .App .contact {
+  position: relative;
   height: 100vh;
   scroll-snap-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 * .App .contact .title {
   text-align: center;
-  padding-top: 20px;
   font-size: 30px;
+  margin: 20px 0px;
 }
 
 * .App .contact .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 85%;
 }
 
 * .App .contact .content .contact_left {
@@ -633,12 +672,317 @@
 }
 
 * .App .contact .footer {
+  position: absolute;
+  bottom: 20px;
+  left: 32%;
   font-size: 18px;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 * .App .contact .footer span {
   color: #3cd070;
+}
+
+@media screen and (max-width: 480px) {
+  .App {
+    padding: 0px 5px;
+  }
+  .App .header {
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .App .header .navbar .logo {
+    font-size: 25px;
+    top: 5px;
+    left: 5px;
+  }
+  .App .header .navbar .pages {
+    background-color: #3cd070;
+    width: 70%;
+    height: 70%;
+    position: fixed;
+    top: 0;
+    right: -0%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    z-index: 4;
+  }
+  .App .header .navbar .pages .exit_menu {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+  }
+  .App .header .navbar .pages span {
+    margin-bottom: 20px;
+  }
+  .App .header .navbar .pages span a {
+    color: white;
+    font-size: 22px;
+  }
+  .App .header .navbar .unvisible {
+    right: -70%;
+  }
+  .App .header .navbar .menu_bars {
+    display: block;
+    font-size: 22px;
+    position: fixed;
+    right: 20px;
+    top: 5px;
+  }
+  .App .header .navbar .menu_bars:hover {
+    color: #3cd070;
+  }
+  .App .header .fa-chevron-up {
+    right: 10px;
+    bottom: 10px;
+    font-size: 20px;
+    color: gray;
+    padding: 10px;
+  }
+  .App .header .header_info {
+    width: 100%;
+    height: 40%;
+  }
+  .App .header .header_info .info_wrapper {
+    margin-top: 45px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .App .header .header_info .info_wrapper .first_line {
+    font-size: 20px;
+  }
+  .App .header .header_info .info_wrapper .name {
+    font-size: 30px;
+  }
+  .App .header .header_info .info_wrapper .scroll {
+    height: 40px;
+  }
+  @-webkit-keyframes move {
+    50% {
+      -webkit-transform: translateY(-40px);
+              transform: translateY(-40px);
+    }
+    100% {
+      -webkit-transform: translateY(-80px);
+              transform: translateY(-80px);
+    }
+  }
+  @keyframes move {
+    50% {
+      -webkit-transform: translateY(-40px);
+              transform: translateY(-40px);
+    }
+    100% {
+      -webkit-transform: translateY(-80px);
+              transform: translateY(-80px);
+    }
+  }
+  .App .header .header_info .info_wrapper .scroll .scroll_item {
+    height: 40px;
+    font-size: 20px;
+  }
+  .App .header .header_info .info_wrapper .text {
+    text-align: center;
+  }
+  .App .header .header_image {
+    width: 100%;
+    height: 60%;
+  }
+  .App .header .header_image .background_shape {
+    width: 60%;
+    height: 100%;
+    right: 0;
+  }
+  .App .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .App .about .about_image {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .App .about .about_image img {
+    margin-top: 25px;
+    width: 65%;
+    margin-left: 0px;
+    -webkit-box-shadow: -20px -20px 0px -1px rgba(0, 0, 0, 0.75);
+            box-shadow: -20px -20px 0px -1px rgba(0, 0, 0, 0.75);
+  }
+  .App .about .about_text {
+    width: 100%;
+    text-align: center;
+  }
+  .App .about .about_text .title {
+    font-size: 25px;
+    text-align: center;
+  }
+  .App .about .about_text .text {
+    font-size: 14.8px;
+  }
+  .App .about .about_text .download {
+    margin-top: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .App .about .about_text .download .download_btn {
+    margin-top: 0px;
+  }
+  .App .about .about_text .download .download_msg {
+    margin-left: 0px;
+    margin-top: 2px;
+    padding: 2px;
+    border: none;
+  }
+  .App .projects_wrapper h1 {
+    font-size: 25px;
+  }
+  .App .projects_wrapper .projects .carousel {
+    padding: 10px 0px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    position: relative;
+  }
+  .App .projects_wrapper .projects .carousel .rec-carousel .rec-arrow-left {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    color: black;
+    z-index: 1;
+    background-color: transparent;
+  }
+  .App .projects_wrapper .projects .carousel .rec-carousel .rec-arrow-left:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .App .projects_wrapper .projects .carousel .rec-carousel .rec-arrow-right {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    color: black;
+    background-color: transparent;
+  }
+  .App .projects_wrapper .projects .carousel .rec-carousel .rec-arrow-right:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .App .projects_wrapper .projects .carousel .rec-carousel .rec-slider-container {
+    margin: 0;
+  }
+  .App .projects_wrapper .projects .carousel .rec-carousel .rec-slider-container .rec-slider .rec-swipable .rec-carousel-item .rec-item-wrapper .project_item {
+    width: 100%;
+    height: 320px;
+  }
+  .App .projects_wrapper .projects .carousel .rec-carousel .rec-slider-container .rec-slider .rec-swipable .rec-carousel-item .rec-item-wrapper .project_item a img {
+    width: 100%;
+  }
+  .App .projects_wrapper .projects .carousel .rec-pagination .rec-dot {
+    border: 1px solid black;
+  }
+  .App .projects_wrapper .projects .carousel .rec-pagination .rec-dot_active {
+    background-color: black;
+  }
+  .App .technologies h1 {
+    font-size: 25px;
+    margin: 10px 0px;
+  }
+  .App .technologies .tech_inner div {
+    width: 130px;
+    height: 130px;
+    margin: 5px 0px;
+  }
+  .App .technologies .tech_inner div i {
+    font-size: 60px;
+  }
+  .App .technologies .tech_inner div .jquery {
+    width: 90px;
+  }
+  .App .technologies .tech_inner div .mysql {
+    width: 80px;
+  }
+  .App .technologies .tech_inner div .vs_code {
+    width: 50px;
+  }
+  .App .contact .title {
+    font-size: 25px;
+  }
+  .App .contact .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .App .contact .content .contact_left {
+    width: 100%;
+  }
+  .App .contact .content .contact_left .get_in_touch {
+    display: none;
+  }
+  .App .contact .content .contact_right {
+    width: 100%;
+  }
+  .App .contact .content .contact_right .contact_form h2 {
+    text-align: center;
+  }
+  .App .contact .content .contact_right .contact_form .name_email {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .App .contact .content .contact_right .contact_form .name_email .name {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .App .contact .content .contact_right .contact_form .name_email .email {
+    width: 100%;
+  }
+  .App .contact .content .contact_right .contact_form .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .App .contact .content .contact_right .contact_form .btn button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  .App .contact .content .contact_right .contact_form .btn .msg_successfull {
+    margin-left: 0px;
+    border: none;
+    text-align: center;
+  }
+  .App .contact .footer {
+    left: 0%;
+    bottom: 15px;
+  }
 }
 /*# sourceMappingURL=App.css.map */
