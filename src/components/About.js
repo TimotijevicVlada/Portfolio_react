@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Me from "../img/about_img.jpg";
+import Me from "../img/about_image.jpg";
 import resume from "../resume/resume.pdf";
 
 const About = () => {
