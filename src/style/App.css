@@ -693,6 +693,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    scroll-snap-align: none;
   }
   .App .header .navbar .logo {
     font-size: 25px;
@@ -813,6 +814,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    scroll-snap-align: none;
   }
   .App .about .about_image {
     width: 100%;
@@ -821,7 +823,7 @@
             justify-content: center;
   }
   .App .about .about_image img {
-    margin-top: 25px;
+    margin-top: 35px;
     width: 65%;
     margin-left: 0px;
     -webkit-box-shadow: -20px -20px 0px -1px rgba(0, 0, 0, 0.75);
@@ -859,6 +861,9 @@
     margin-top: 2px;
     padding: 2px;
     border: none;
+  }
+  .App .projects_wrapper {
+    scroll-snap-align: none;
   }
   .App .projects_wrapper h1 {
     font-size: 25px;
@@ -906,6 +911,9 @@
   .App .projects_wrapper .projects .carousel .rec-pagination .rec-dot_active {
     background-color: black;
   }
+  .App .technologies {
+    scroll-snap-align: none;
+  }
   .App .technologies h1 {
     font-size: 25px;
     margin: 10px 0px;
@@ -926,6 +934,9 @@
   }
   .App .technologies .tech_inner div .vs_code {
     width: 50px;
+  }
+  .App .contact {
+    scroll-snap-align: none;
   }
   .App .contact .title {
     font-size: 25px;
