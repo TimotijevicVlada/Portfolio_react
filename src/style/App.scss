@@ -472,7 +472,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .App {
     padding: 0px 5px;
     .header {
@@ -481,8 +481,8 @@
       scroll-snap-align: none;
       .navbar {
         .logo {
-          font-size: 25px;
-          top: 5px;
+          font-size: 30px;
+          top: 10px;
           left: 5px;
         }
         .pages {
@@ -501,7 +501,7 @@
             position: absolute;
             top: 10px;
             right: 15px;
-            font-size: 20px;
+            font-size: 25px;
             padding: 10px;
             color: white;
           }
@@ -509,7 +509,7 @@
             margin-bottom: 20px;
             a {
               color: white;
-              font-size: 22px;
+              font-size: 30px;
             }
           }
         }
@@ -518,10 +518,10 @@
         }
         .menu_bars {
           display: block;
-          font-size: 22px;
+          font-size: 30px;
           position: fixed;
-          right: 20px;
-          top: 5px;
+          right: 25px;
+          top: 10px;
           &:hover {
             color: rgb(60, 208, 112);
           }
@@ -530,9 +530,9 @@
       .fa-chevron-up {
         right: 10px;
         bottom: 10px;
-        font-size: 20px;
+        font-size: 25px;
         color: gray;
-        padding: 10px;
+        padding: 15px;
       }
       .header_info {
         width: 100%;
@@ -541,10 +541,10 @@
           margin-top: 45px;
           align-items: center;
           .first_line {
-            font-size: 20px;
+            font-size: 25px;
           }
           .name {
-            font-size: 30px;
+            font-size: 40px;
           }
           .scroll {
             height: 40px;
@@ -558,11 +558,12 @@
             }
             .scroll_item {
               height: 40px;
-              font-size: 20px;
+              font-size: 25px;
             }
           }
           .text {
             text-align: center;
+            font-size: 18px;
           }
         }
       }
@@ -577,6 +578,7 @@
       }
     }
     .about {
+      height: 90vh;
       flex-direction: column;
       scroll-snap-align: none;
       .about_image {
@@ -584,7 +586,7 @@
         justify-content: center;
         img {
           margin-top: 40px;
-          width: 80%;
+          width: 70%;
           margin-left: 0px;
           box-shadow: -20px -20px 0px -1px rgba(0, 0, 0, 0.75);
         }
@@ -593,14 +595,15 @@
         width: 100%;
         text-align: center;
         .title {
-          font-size: 25px;
+          font-size: 30px;
           text-align: center;
+          margin-top: 10px;
         }
         .text {
-          font-size: 14.8px;
+          font-size: 18px;
         }
         .download {
-          margin-top: 5px;
+          margin-top: 15px;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -618,8 +621,9 @@
     }
     .projects_wrapper {
       scroll-snap-align: none;
+      height: 70vh;
       h1 {
-        font-size: 25px;
+        font-size: 30px;
       }
       .projects {
         .carousel {
@@ -628,6 +632,7 @@
           position: relative;
           .rec-carousel {
             .rec-arrow-left {
+              font-size: 35px;
               position: absolute;
               left: 0;
               top: 40%;
@@ -639,6 +644,7 @@
               }
             }
             .rec-arrow-right {
+              font-size: 35px;
               position: absolute;
               right: 0;
               top: 40%;
@@ -672,9 +678,13 @@
           .rec-pagination {
             .rec-dot {
               border: 1px solid black;
+              width: 16px;
+              height: 16px;
             }
             .rec-dot_active {
               background-color: black;
+              width: 18px;
+              height: 18px;
             }
           }
         }
@@ -682,8 +692,9 @@
     }
     .technologies {
       scroll-snap-align: none;
+      height: 70vh;
       h1 {
-        font-size: 25px;
+        font-size: 30px;
         margin: 10px 0px;
       }
       .tech_inner {
@@ -707,9 +718,10 @@
       }
     }
     .contact {
+      height: 70vh;
       scroll-snap-align: none;
       .title {
-        font-size: 25px;
+        font-size: 30px;
       }
       .content {
         flex-direction: column;
@@ -730,9 +742,25 @@
               .name {
                 width: 100%;
                 margin-bottom: 10px;
+                input {
+                  font-size: 20px;
+                }
               }
               .email {
                 width: 100%;
+                input {
+                  font-size: 20px;
+                }
+              }
+            }
+            .subject {
+              input {
+                font-size: 20px;
+              }
+            }
+            .message {
+              textarea {
+                font-size: 20px;
               }
             }
             .btn {
@@ -740,13 +768,169 @@
               flex-direction: column;
               button {
                 width: 100%;
-                padding: 10px;
+                padding: 12px;
                 margin-bottom: 5px;
+                font-size: 20px;
               }
               .msg_successfull {
                 margin-left: 0px;
+                margin-bottom: 15px;
                 border: none;
                 text-align: center;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+      .footer {
+        left: 17%;
+        bottom: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .App {
+    .header {
+      .navbar {
+        .logo {
+          font-size: 25px;
+          top: 5px;
+          left: 5px;
+        }
+        .pages {
+          .exit_menu {
+            font-size: 20px;
+          }
+          span {
+            a {
+              font-size: 22px;
+            }
+          }
+        }
+        .menu_bars {
+          font-size: 22px;
+          right: 20px;
+          top: 5px;
+        }
+      }
+      .fa-chevron-up {
+        font-size: 20px;
+        padding: 10px;
+      }
+      .header_info {
+        .info_wrapper {
+          .first_line {
+            font-size: 20px;
+          }
+          .name {
+            font-size: 30px;
+          }
+          .scroll {
+            .scroll_item {
+              font-size: 20px;
+            }
+          }
+          .text {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .about {
+      height: 100vh;
+      .about_image {
+        img {
+          width: 80%;
+        }
+      }
+      .about_text {
+        .title {
+          font-size: 25px;
+          margin-top: 5px;
+        }
+        .text {
+          font-size: 14.8px;
+        }
+        .download {
+          margin-top: 5px;
+        }
+      }
+    }
+    .projects_wrapper {
+      height: 100vh;
+      h1 {
+        font-size: 25px;
+      }
+      .projects {
+        .carousel {
+          .rec-carousel {
+            .rec-arrow-left {
+              font-size: 25px;
+            }
+            .rec-arrow-right {
+              font-size: 25px;
+            }
+          }
+          .rec-pagination {
+            .rec-dot {
+              width: 10px;
+              height: 10px;
+            }
+            .rec-dot_active {
+              width: 12px;
+              height: 12px;
+            }
+          }
+        }
+      }
+    }
+    .technologies {
+      height: 100vh;
+      h1 {
+        font-size: 25px;
+      }
+    }
+    .contact {
+      height: 100vh;
+      .title {
+        font-size: 25px;
+      }
+      .content {
+        .contact_right {
+          .contact_form {
+            .name_email {
+              .name {
+                input {
+                  font-size: 17px;
+                }
+              }
+              .email {
+                input {
+                  font-size: 17px;
+                }
+              }
+            }
+            .subject {
+              input {
+                font-size: 17px;
+              }
+            }
+            .message {
+              textarea {
+                font-size: 17px;
+              }
+            }
+            .btn {
+              button {
+                padding: 10px;
+                font-size: 18px;
+              }
+              .msg_successfull {
+                margin-bottom: 10px;
+                font-size: 18px;
               }
             }
           }
@@ -754,7 +938,6 @@
       }
       .footer {
         left: 0%;
-        bottom: 15px;
       }
     }
   }

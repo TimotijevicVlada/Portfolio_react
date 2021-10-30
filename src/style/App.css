@@ -684,7 +684,7 @@
   color: #3cd070;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .App {
     padding: 0px 5px;
   }
@@ -697,8 +697,8 @@
     scroll-snap-align: none;
   }
   .App .header .navbar .logo {
-    font-size: 25px;
-    top: 5px;
+    font-size: 30px;
+    top: 10px;
     left: 5px;
   }
   .App .header .navbar .pages {
@@ -724,7 +724,7 @@
     position: absolute;
     top: 10px;
     right: 15px;
-    font-size: 20px;
+    font-size: 25px;
     padding: 10px;
     color: white;
   }
@@ -733,17 +733,17 @@
   }
   .App .header .navbar .pages span a {
     color: white;
-    font-size: 22px;
+    font-size: 30px;
   }
   .App .header .navbar .unvisible {
     right: -70%;
   }
   .App .header .navbar .menu_bars {
     display: block;
-    font-size: 22px;
+    font-size: 30px;
     position: fixed;
-    right: 20px;
-    top: 5px;
+    right: 25px;
+    top: 10px;
   }
   .App .header .navbar .menu_bars:hover {
     color: #3cd070;
@@ -751,9 +751,9 @@
   .App .header .fa-chevron-up {
     right: 10px;
     bottom: 10px;
-    font-size: 20px;
+    font-size: 25px;
     color: gray;
-    padding: 10px;
+    padding: 15px;
   }
   .App .header .header_info {
     width: 100%;
@@ -766,10 +766,10 @@
             align-items: center;
   }
   .App .header .header_info .info_wrapper .first_line {
-    font-size: 20px;
+    font-size: 25px;
   }
   .App .header .header_info .info_wrapper .name {
-    font-size: 30px;
+    font-size: 40px;
   }
   .App .header .header_info .info_wrapper .scroll {
     height: 40px;
@@ -796,10 +796,11 @@
   }
   .App .header .header_info .info_wrapper .scroll .scroll_item {
     height: 40px;
-    font-size: 20px;
+    font-size: 25px;
   }
   .App .header .header_info .info_wrapper .text {
     text-align: center;
+    font-size: 18px;
   }
   .App .header .header_image {
     width: 100%;
@@ -811,6 +812,7 @@
     right: 0;
   }
   .App .about {
+    height: 90vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -825,7 +827,7 @@
   }
   .App .about .about_image img {
     margin-top: 40px;
-    width: 80%;
+    width: 70%;
     margin-left: 0px;
     -webkit-box-shadow: -20px -20px 0px -1px rgba(0, 0, 0, 0.75);
             box-shadow: -20px -20px 0px -1px rgba(0, 0, 0, 0.75);
@@ -835,14 +837,15 @@
     text-align: center;
   }
   .App .about .about_text .title {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
+    margin-top: 10px;
   }
   .App .about .about_text .text {
-    font-size: 14.8px;
+    font-size: 18px;
   }
   .App .about .about_text .download {
-    margin-top: 5px;
+    margin-top: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -865,9 +868,10 @@
   }
   .App .projects_wrapper {
     scroll-snap-align: none;
+    height: 70vh;
   }
   .App .projects_wrapper h1 {
-    font-size: 25px;
+    font-size: 30px;
   }
   .App .projects_wrapper .projects .carousel {
     padding: 10px 0px;
@@ -876,6 +880,7 @@
     position: relative;
   }
   .App .projects_wrapper .projects .carousel .rec-carousel .rec-arrow-left {
+    font-size: 35px;
     position: absolute;
     left: 0;
     top: 40%;
@@ -887,6 +892,7 @@
     background-color: rgba(0, 0, 0, 0.1);
   }
   .App .projects_wrapper .projects .carousel .rec-carousel .rec-arrow-right {
+    font-size: 35px;
     position: absolute;
     right: 0;
     top: 40%;
@@ -908,15 +914,20 @@
   }
   .App .projects_wrapper .projects .carousel .rec-pagination .rec-dot {
     border: 1px solid black;
+    width: 16px;
+    height: 16px;
   }
   .App .projects_wrapper .projects .carousel .rec-pagination .rec-dot_active {
     background-color: black;
+    width: 18px;
+    height: 18px;
   }
   .App .technologies {
     scroll-snap-align: none;
+    height: 70vh;
   }
   .App .technologies h1 {
-    font-size: 25px;
+    font-size: 30px;
     margin: 10px 0px;
   }
   .App .technologies .tech_inner div {
@@ -937,10 +948,11 @@
     width: 50px;
   }
   .App .contact {
+    height: 70vh;
     scroll-snap-align: none;
   }
   .App .contact .title {
-    font-size: 25px;
+    font-size: 30px;
   }
   .App .contact .content {
     -webkit-box-orient: vertical;
@@ -970,8 +982,20 @@
     width: 100%;
     margin-bottom: 10px;
   }
+  .App .contact .content .contact_right .contact_form .name_email .name input {
+    font-size: 20px;
+  }
   .App .contact .content .contact_right .contact_form .name_email .email {
     width: 100%;
+  }
+  .App .contact .content .contact_right .contact_form .name_email .email input {
+    font-size: 20px;
+  }
+  .App .contact .content .contact_right .contact_form .subject input {
+    font-size: 20px;
+  }
+  .App .contact .content .contact_right .contact_form .message textarea {
+    font-size: 20px;
   }
   .App .contact .content .contact_right .contact_form .btn {
     display: -webkit-box;
@@ -984,17 +1008,126 @@
   }
   .App .contact .content .contact_right .contact_form .btn button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 5px;
+    font-size: 20px;
   }
   .App .contact .content .contact_right .contact_form .btn .msg_successfull {
     margin-left: 0px;
+    margin-bottom: 15px;
     border: none;
     text-align: center;
+    font-size: 20px;
+  }
+  .App .contact .footer {
+    left: 17%;
+    bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .App .header .navbar .logo {
+    font-size: 25px;
+    top: 5px;
+    left: 5px;
+  }
+  .App .header .navbar .pages .exit_menu {
+    font-size: 20px;
+  }
+  .App .header .navbar .pages span a {
+    font-size: 22px;
+  }
+  .App .header .navbar .menu_bars {
+    font-size: 22px;
+    right: 20px;
+    top: 5px;
+  }
+  .App .header .fa-chevron-up {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .App .header .header_info .info_wrapper .first_line {
+    font-size: 20px;
+  }
+  .App .header .header_info .info_wrapper .name {
+    font-size: 30px;
+  }
+  .App .header .header_info .info_wrapper .scroll .scroll_item {
+    font-size: 20px;
+  }
+  .App .header .header_info .info_wrapper .text {
+    font-size: 16px;
+  }
+  .App .about {
+    height: 100vh;
+  }
+  .App .about .about_image img {
+    width: 80%;
+  }
+  .App .about .about_text .title {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+  .App .about .about_text .text {
+    font-size: 14.8px;
+  }
+  .App .about .about_text .download {
+    margin-top: 5px;
+  }
+  .App .projects_wrapper {
+    height: 100vh;
+  }
+  .App .projects_wrapper h1 {
+    font-size: 25px;
+  }
+  .App .projects_wrapper .projects .carousel .rec-carousel .rec-arrow-left {
+    font-size: 25px;
+  }
+  .App .projects_wrapper .projects .carousel .rec-carousel .rec-arrow-right {
+    font-size: 25px;
+  }
+  .App .projects_wrapper .projects .carousel .rec-pagination .rec-dot {
+    width: 10px;
+    height: 10px;
+  }
+  .App .projects_wrapper .projects .carousel .rec-pagination .rec-dot_active {
+    width: 12px;
+    height: 12px;
+  }
+  .App .technologies {
+    height: 100vh;
+  }
+  .App .technologies h1 {
+    font-size: 25px;
+  }
+  .App .contact {
+    height: 100vh;
+  }
+  .App .contact .title {
+    font-size: 25px;
+  }
+  .App .contact .content .contact_right .contact_form .name_email .name input {
+    font-size: 17px;
+  }
+  .App .contact .content .contact_right .contact_form .name_email .email input {
+    font-size: 17px;
+  }
+  .App .contact .content .contact_right .contact_form .subject input {
+    font-size: 17px;
+  }
+  .App .contact .content .contact_right .contact_form .message textarea {
+    font-size: 17px;
+  }
+  .App .contact .content .contact_right .contact_form .btn button {
+    padding: 10px;
+    font-size: 18px;
+  }
+  .App .contact .content .contact_right .contact_form .btn .msg_successfull {
+    margin-bottom: 10px;
+    font-size: 18px;
   }
   .App .contact .footer {
     left: 0%;
-    bottom: 15px;
   }
 }
 /*# sourceMappingURL=App.css.map */
