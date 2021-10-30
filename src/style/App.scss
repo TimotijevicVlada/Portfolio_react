@@ -472,18 +472,18 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .App {
-    padding: 0px 5px;
+    padding: 0px 10px;
     .header {
       height: 100vh;
       flex-direction: column;
       scroll-snap-align: none;
       .navbar {
         .logo {
-          font-size: 30px;
+          font-size: 40px;
           top: 10px;
-          left: 5px;
+          left: 10px;
         }
         .pages {
           background-color: rgb(60, 208, 112);
@@ -499,17 +499,17 @@
           .exit_menu {
             display: block;
             position: absolute;
-            top: 10px;
-            right: 15px;
-            font-size: 25px;
-            padding: 10px;
+            top: 15px;
+            right: 25px;
+            font-size: 35px;
+            padding: 15px;
             color: white;
           }
           span {
-            margin-bottom: 20px;
+            margin-bottom: 35px;
             a {
               color: white;
-              font-size: 30px;
+              font-size: 35px;
             }
           }
         }
@@ -518,9 +518,9 @@
         }
         .menu_bars {
           display: block;
-          font-size: 30px;
+          font-size: 35px;
           position: fixed;
-          right: 25px;
+          right: 35px;
           top: 10px;
           &:hover {
             color: rgb(60, 208, 112);
@@ -528,11 +528,11 @@
         }
       }
       .fa-chevron-up {
-        right: 10px;
-        bottom: 10px;
-        font-size: 25px;
+        right: 20px;
+        bottom: 20px;
+        font-size: 35px;
         color: gray;
-        padding: 15px;
+        padding: 20px;
       }
       .header_info {
         width: 100%;
@@ -541,10 +541,10 @@
           margin-top: 45px;
           align-items: center;
           .first_line {
-            font-size: 25px;
+            font-size: 35px;
           }
           .name {
-            font-size: 40px;
+            font-size: 50px;
           }
           .scroll {
             height: 40px;
@@ -563,7 +563,7 @@
           }
           .text {
             text-align: center;
-            font-size: 18px;
+            font-size: 20px;
           }
         }
       }
@@ -578,7 +578,8 @@
       }
     }
     .about {
-      height: 90vh;
+      height: auto;
+      margin-top: 30px;
       flex-direction: column;
       scroll-snap-align: none;
       .about_image {
@@ -586,7 +587,7 @@
         justify-content: center;
         img {
           margin-top: 40px;
-          width: 70%;
+          width: 60%;
           margin-left: 0px;
           box-shadow: -20px -20px 0px -1px rgba(0, 0, 0, 0.75);
         }
@@ -595,12 +596,12 @@
         width: 100%;
         text-align: center;
         .title {
-          font-size: 30px;
+          font-size: 35px;
           text-align: center;
           margin-top: 10px;
         }
         .text {
-          font-size: 18px;
+          font-size: 20px;
         }
         .download {
           margin-top: 15px;
@@ -613,7 +614,7 @@
           .download_msg {
             margin-left: 0px;
             margin-top: 2px;
-            padding: 2px;
+            padding: 5px;
             border: none;
           }
         }
@@ -621,9 +622,10 @@
     }
     .projects_wrapper {
       scroll-snap-align: none;
-      height: 70vh;
+      height: auto;
+      margin-top: 30px;
       h1 {
-        font-size: 30px;
+        font-size: 35px;
       }
       .projects {
         .carousel {
@@ -632,7 +634,7 @@
           position: relative;
           .rec-carousel {
             .rec-arrow-left {
-              font-size: 35px;
+              font-size: 40px;
               position: absolute;
               left: 0;
               top: 40%;
@@ -644,7 +646,7 @@
               }
             }
             .rec-arrow-right {
-              font-size: 35px;
+              font-size: 40px;
               position: absolute;
               right: 0;
               top: 40%;
@@ -692,16 +694,18 @@
     }
     .technologies {
       scroll-snap-align: none;
-      height: 70vh;
+      height: auto;
+      margin-top: 30px;
       h1 {
         font-size: 30px;
         margin: 10px 0px;
       }
       .tech_inner {
+        justify-content: flex-start;
         div {
-          width: 130px;
-          height: 130px;
-          margin: 5px 0px;
+          width: 140px;
+          height: 140px;
+          margin: 5px 10px;
           i {
             font-size: 60px;
           }
@@ -718,10 +722,12 @@
       }
     }
     .contact {
-      height: 70vh;
+      height: auto;
+      margin-top: 30px;
       scroll-snap-align: none;
+      padding-bottom: 90px;
       .title {
-        font-size: 30px;
+        font-size: 35px;
       }
       .content {
         flex-direction: column;
@@ -742,6 +748,163 @@
               .name {
                 width: 100%;
                 margin-bottom: 10px;
+                input {
+                  font-size: 22px;
+                }
+              }
+              .email {
+                width: 100%;
+                input {
+                  font-size: 22px;
+                }
+              }
+            }
+            .subject {
+              input {
+                font-size: 22px;
+              }
+            }
+            .message {
+              textarea {
+                font-size: 22px;
+              }
+            }
+            .btn {
+              display: flex;
+              flex-direction: column;
+              button {
+                width: 100%;
+                padding: 12px;
+                margin-bottom: 5px;
+                font-size: 25px;
+              }
+              .msg_successfull {
+                margin-left: 0px;
+                margin-bottom: 15px;
+                border: none;
+                text-align: center;
+                font-size: 22px;
+              }
+            }
+          }
+        }
+      }
+      .footer {
+        left: 25%;
+        bottom: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    padding: 0px 5px;
+    .header {
+      .navbar {
+        .logo {
+          font-size: 30px;
+          left: 5px;
+        }
+        .pages {
+          .exit_menu {
+            top: 10px;
+            right: 15px;
+            font-size: 25px;
+            padding: 10px;
+          }
+          span {
+            margin-bottom: 20px;
+            a {
+              font-size: 30px;
+            }
+          }
+        }
+        .menu_bars {
+          font-size: 30px;
+          right: 25px;
+          top: 10px;
+        }
+      }
+      .fa-chevron-up {
+        right: 10px;
+        bottom: 10px;
+        font-size: 25px;
+        padding: 15px;
+      }
+      .header_info {
+        .info_wrapper {
+          .first_line {
+            font-size: 25px;
+          }
+          .name {
+            font-size: 40px;
+          }
+          .text {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .about {
+      .about_image {
+        img {
+          width: 70%;
+        }
+      }
+      .about_text {
+        .title {
+          font-size: 30px;
+        }
+        .text {
+          font-size: 18px;
+        }
+        .download {
+          .download_msg {
+            padding: 2px;
+          }
+        }
+      }
+    }
+    .projects_wrapper {
+      h1 {
+        font-size: 30px;
+      }
+      .projects {
+        .carousel {
+          .rec-carousel {
+            .rec-arrow-left {
+              font-size: 35px;
+            }
+            .rec-arrow-right {
+              font-size: 35px;
+            }
+          }
+        }
+      }
+    }
+    .technologies {
+      h1 {
+        font-size: 30px;
+      }
+      .tech_inner {
+        justify-content: center;
+        div {
+          width: 130px;
+          height: 130px;
+          margin: 5px 0px;
+        }
+      }
+    }
+    .contact {
+      .title {
+        font-size: 30px;
+      }
+      .content {
+        .contact_right {
+          .contact_form {
+            .name_email {
+              .name {
                 input {
                   font-size: 20px;
                 }
@@ -764,19 +927,10 @@
               }
             }
             .btn {
-              display: flex;
-              flex-direction: column;
               button {
-                width: 100%;
-                padding: 12px;
-                margin-bottom: 5px;
                 font-size: 20px;
               }
               .msg_successfull {
-                margin-left: 0px;
-                margin-bottom: 15px;
-                border: none;
-                text-align: center;
                 font-size: 20px;
               }
             }
@@ -785,7 +939,6 @@
       }
       .footer {
         left: 17%;
-        bottom: 15px;
       }
     }
   }
@@ -840,7 +993,7 @@
       }
     }
     .about {
-      height: 100vh;
+      margin-top: 0px;
       .about_image {
         img {
           width: 80%;
@@ -860,7 +1013,7 @@
       }
     }
     .projects_wrapper {
-      height: 100vh;
+      margin-top: 0px;
       h1 {
         font-size: 25px;
       }
@@ -888,13 +1041,15 @@
       }
     }
     .technologies {
-      height: 100vh;
+      margin-top: 0px;
       h1 {
         font-size: 25px;
       }
     }
     .contact {
       height: 100vh;
+      padding-bottom: 0;
+      margin-top: 0px;
       .title {
         font-size: 25px;
       }

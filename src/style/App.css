@@ -684,9 +684,9 @@
   color: #3cd070;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .App {
-    padding: 0px 5px;
+    padding: 0px 10px;
   }
   .App .header {
     height: 100vh;
@@ -697,9 +697,9 @@
     scroll-snap-align: none;
   }
   .App .header .navbar .logo {
-    font-size: 30px;
+    font-size: 40px;
     top: 10px;
-    left: 5px;
+    left: 10px;
   }
   .App .header .navbar .pages {
     background-color: #3cd070;
@@ -722,38 +722,38 @@
   .App .header .navbar .pages .exit_menu {
     display: block;
     position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 25px;
-    padding: 10px;
+    top: 15px;
+    right: 25px;
+    font-size: 35px;
+    padding: 15px;
     color: white;
   }
   .App .header .navbar .pages span {
-    margin-bottom: 20px;
+    margin-bottom: 35px;
   }
   .App .header .navbar .pages span a {
     color: white;
-    font-size: 30px;
+    font-size: 35px;
   }
   .App .header .navbar .unvisible {
     right: -70%;
   }
   .App .header .navbar .menu_bars {
     display: block;
-    font-size: 30px;
+    font-size: 35px;
     position: fixed;
-    right: 25px;
+    right: 35px;
     top: 10px;
   }
   .App .header .navbar .menu_bars:hover {
     color: #3cd070;
   }
   .App .header .fa-chevron-up {
-    right: 10px;
-    bottom: 10px;
-    font-size: 25px;
+    right: 20px;
+    bottom: 20px;
+    font-size: 35px;
     color: gray;
-    padding: 15px;
+    padding: 20px;
   }
   .App .header .header_info {
     width: 100%;
@@ -766,10 +766,10 @@
             align-items: center;
   }
   .App .header .header_info .info_wrapper .first_line {
-    font-size: 25px;
+    font-size: 35px;
   }
   .App .header .header_info .info_wrapper .name {
-    font-size: 40px;
+    font-size: 50px;
   }
   .App .header .header_info .info_wrapper .scroll {
     height: 40px;
@@ -800,7 +800,7 @@
   }
   .App .header .header_info .info_wrapper .text {
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
   }
   .App .header .header_image {
     width: 100%;
@@ -812,7 +812,8 @@
     right: 0;
   }
   .App .about {
-    height: 90vh;
+    height: auto;
+    margin-top: 30px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -827,7 +828,7 @@
   }
   .App .about .about_image img {
     margin-top: 40px;
-    width: 70%;
+    width: 60%;
     margin-left: 0px;
     -webkit-box-shadow: -20px -20px 0px -1px rgba(0, 0, 0, 0.75);
             box-shadow: -20px -20px 0px -1px rgba(0, 0, 0, 0.75);
@@ -837,12 +838,12 @@
     text-align: center;
   }
   .App .about .about_text .title {
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
     margin-top: 10px;
   }
   .App .about .about_text .text {
-    font-size: 18px;
+    font-size: 20px;
   }
   .App .about .about_text .download {
     margin-top: 15px;
@@ -863,15 +864,16 @@
   .App .about .about_text .download .download_msg {
     margin-left: 0px;
     margin-top: 2px;
-    padding: 2px;
+    padding: 5px;
     border: none;
   }
   .App .projects_wrapper {
     scroll-snap-align: none;
-    height: 70vh;
+    height: auto;
+    margin-top: 30px;
   }
   .App .projects_wrapper h1 {
-    font-size: 30px;
+    font-size: 35px;
   }
   .App .projects_wrapper .projects .carousel {
     padding: 10px 0px;
@@ -880,7 +882,7 @@
     position: relative;
   }
   .App .projects_wrapper .projects .carousel .rec-carousel .rec-arrow-left {
-    font-size: 35px;
+    font-size: 40px;
     position: absolute;
     left: 0;
     top: 40%;
@@ -892,7 +894,7 @@
     background-color: rgba(0, 0, 0, 0.1);
   }
   .App .projects_wrapper .projects .carousel .rec-carousel .rec-arrow-right {
-    font-size: 35px;
+    font-size: 40px;
     position: absolute;
     right: 0;
     top: 40%;
@@ -924,16 +926,22 @@
   }
   .App .technologies {
     scroll-snap-align: none;
-    height: 70vh;
+    height: auto;
+    margin-top: 30px;
   }
   .App .technologies h1 {
     font-size: 30px;
     margin: 10px 0px;
   }
+  .App .technologies .tech_inner {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
   .App .technologies .tech_inner div {
-    width: 130px;
-    height: 130px;
-    margin: 5px 0px;
+    width: 140px;
+    height: 140px;
+    margin: 5px 10px;
   }
   .App .technologies .tech_inner div i {
     font-size: 60px;
@@ -948,11 +956,13 @@
     width: 50px;
   }
   .App .contact {
-    height: 70vh;
+    height: auto;
+    margin-top: 30px;
     scroll-snap-align: none;
+    padding-bottom: 90px;
   }
   .App .contact .title {
-    font-size: 30px;
+    font-size: 35px;
   }
   .App .contact .content {
     -webkit-box-orient: vertical;
@@ -983,19 +993,19 @@
     margin-bottom: 10px;
   }
   .App .contact .content .contact_right .contact_form .name_email .name input {
-    font-size: 20px;
+    font-size: 22px;
   }
   .App .contact .content .contact_right .contact_form .name_email .email {
     width: 100%;
   }
   .App .contact .content .contact_right .contact_form .name_email .email input {
-    font-size: 20px;
+    font-size: 22px;
   }
   .App .contact .content .contact_right .contact_form .subject input {
-    font-size: 20px;
+    font-size: 22px;
   }
   .App .contact .content .contact_right .contact_form .message textarea {
-    font-size: 20px;
+    font-size: 22px;
   }
   .App .contact .content .contact_right .contact_form .btn {
     display: -webkit-box;
@@ -1010,18 +1020,121 @@
     width: 100%;
     padding: 12px;
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 25px;
   }
   .App .contact .content .contact_right .contact_form .btn .msg_successfull {
     margin-left: 0px;
     margin-bottom: 15px;
     border: none;
     text-align: center;
+    font-size: 22px;
+  }
+  .App .contact .footer {
+    left: 25%;
+    bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    padding: 0px 5px;
+  }
+  .App .header .navbar .logo {
+    font-size: 30px;
+    left: 5px;
+  }
+  .App .header .navbar .pages .exit_menu {
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    padding: 10px;
+  }
+  .App .header .navbar .pages span {
+    margin-bottom: 20px;
+  }
+  .App .header .navbar .pages span a {
+    font-size: 30px;
+  }
+  .App .header .navbar .menu_bars {
+    font-size: 30px;
+    right: 25px;
+    top: 10px;
+  }
+  .App .header .fa-chevron-up {
+    right: 10px;
+    bottom: 10px;
+    font-size: 25px;
+    padding: 15px;
+  }
+  .App .header .header_info .info_wrapper .first_line {
+    font-size: 25px;
+  }
+  .App .header .header_info .info_wrapper .name {
+    font-size: 40px;
+  }
+  .App .header .header_info .info_wrapper .text {
+    font-size: 18px;
+  }
+  .App .about .about_image img {
+    width: 70%;
+  }
+  .App .about .about_text .title {
+    font-size: 30px;
+  }
+  .App .about .about_text .text {
+    font-size: 18px;
+  }
+  .App .about .about_text .download .download_msg {
+    padding: 2px;
+  }
+  .App .projects_wrapper h1 {
+    font-size: 30px;
+  }
+  .App .projects_wrapper .projects .carousel .rec-carousel .rec-arrow-left {
+    font-size: 35px;
+  }
+  .App .projects_wrapper .projects .carousel .rec-carousel .rec-arrow-right {
+    font-size: 35px;
+  }
+  .App .technologies h1 {
+    font-size: 30px;
+  }
+  .App .technologies .tech_inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .App .technologies .tech_inner div {
+    width: 130px;
+    height: 130px;
+    margin: 5px 0px;
+  }
+  .App .contact .title {
+    font-size: 30px;
+  }
+  .App .contact .content .contact_right .contact_form .name_email .name input {
+    font-size: 20px;
+  }
+  .App .contact .content .contact_right .contact_form .name_email .email {
+    width: 100%;
+  }
+  .App .contact .content .contact_right .contact_form .name_email .email input {
+    font-size: 20px;
+  }
+  .App .contact .content .contact_right .contact_form .subject input {
+    font-size: 20px;
+  }
+  .App .contact .content .contact_right .contact_form .message textarea {
+    font-size: 20px;
+  }
+  .App .contact .content .contact_right .contact_form .btn button {
+    font-size: 20px;
+  }
+  .App .contact .content .contact_right .contact_form .btn .msg_successfull {
     font-size: 20px;
   }
   .App .contact .footer {
     left: 17%;
-    bottom: 15px;
   }
 }
 
@@ -1059,7 +1172,7 @@
     font-size: 16px;
   }
   .App .about {
-    height: 100vh;
+    margin-top: 0px;
   }
   .App .about .about_image img {
     width: 80%;
@@ -1075,7 +1188,7 @@
     margin-top: 5px;
   }
   .App .projects_wrapper {
-    height: 100vh;
+    margin-top: 0px;
   }
   .App .projects_wrapper h1 {
     font-size: 25px;
@@ -1095,13 +1208,15 @@
     height: 12px;
   }
   .App .technologies {
-    height: 100vh;
+    margin-top: 0px;
   }
   .App .technologies h1 {
     font-size: 25px;
   }
   .App .contact {
     height: 100vh;
+    padding-bottom: 0;
+    margin-top: 0px;
   }
   .App .contact .title {
     font-size: 25px;
