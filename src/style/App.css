@@ -471,9 +471,9 @@
 * .App .technologies .tech_inner div {
   -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
-  width: 270px;
-  height: 270px;
-  margin: 5px;
+  width: 230px;
+  height: 230px;
+  margin: 15px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -684,7 +684,7 @@
   color: #3cd070;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1250px) {
   .App {
     padding: 0px 10px;
   }
@@ -908,8 +908,8 @@
     margin: 0;
   }
   .App .projects_wrapper .projects .carousel .rec-carousel .rec-slider-container .rec-slider .rec-swipable .rec-carousel-item .rec-item-wrapper .project_item {
-    width: 100%;
-    height: 320px;
+    width: 250px;
+    height: 250px;
   }
   .App .projects_wrapper .projects .carousel .rec-carousel .rec-slider-container .rec-slider .rec-swipable .rec-carousel-item .rec-item-wrapper .project_item a img {
     width: 100%;
@@ -939,8 +939,8 @@
             justify-content: flex-start;
   }
   .App .technologies .tech_inner div {
-    width: 140px;
-    height: 140px;
+    width: 200px;
+    height: 200px;
     margin: 5px 10px;
   }
   .App .technologies .tech_inner div i {
@@ -1035,6 +1035,22 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .App .header .navbar .projects_wrapper .projects .carousel .rec-carousel .rec-slider-container .rec-slider .rec-swipable .rec-carousel-item .rec-item-wrapper .project_item {
+    width: 230px;
+    height: 230px;
+  }
+  .App .header .navbar .technologies .tech_inner {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .App .header .navbar .technologies .tech_inner div {
+    width: 140px;
+    height: 140px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .App {
     padding: 0px 5px;
@@ -1100,9 +1116,9 @@
     font-size: 30px;
   }
   .App .technologies .tech_inner {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .App .technologies .tech_inner div {
     width: 130px;
