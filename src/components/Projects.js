@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from "react-elastic-carousel";
 import { projects } from "../data";
 
-const Projects = () => {
+const Projects = ({nightMode}) => {
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 550, itemsToShow: 2 },
@@ -14,7 +14,7 @@ const Projects = () => {
     <div className="projects_wrapper" id="projects">
       <h1>Projects</h1>
       <div className="projects">
-        <Carousel className="carousel" breakPoints={breakPoints}>
+        <Carousel className={!nightMode ? "carousel" : "carousel night"} breakPoints={breakPoints}>
           {projects.map((item) => (
             <div className="project_item" key={item.id}>
               <a href={item.link} target="_blank" rel="noreferrer">

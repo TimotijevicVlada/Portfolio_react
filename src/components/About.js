@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Me from "../img/about_image.jpg";
 import resume from "../resume/resume.pdf";
 
-const About = () => {
+const About = ({nightMode}) => {
 
   const [download, setDownload] = useState(false);
 
@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div className="about" id="about">
       <div className="about_image">
-        <img src={Me} alt="about_me" />
+        <img className={!nightMode ? "" : "night"} src={Me} alt="about_me" />
       </div>
       <div className="about_text">
         <h2 className="title">About</h2>

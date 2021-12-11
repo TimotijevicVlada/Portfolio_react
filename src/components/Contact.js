@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
 import Footer from "./Footer";
 
-const Contact = () => {
+const Contact = ({nightMode}) => {
 
   const [message, setMessage] = useState(false);
 
@@ -52,17 +52,18 @@ const Contact = () => {
             <h2>Message me</h2>
             <div className="name_email">
               <div className="name">
-                <input type="text" name="user_name" placeholder="Name" />
+                <input className={!nightMode ? "" : "night"} type="text" name="user_name" placeholder="Name" />
               </div>
               <div className="email">
-                <input type="text" name="user_email" placeholder="Email" />
+                <input className={!nightMode ? "" : "night"} type="text" name="user_email" placeholder="Email" />
               </div>
             </div>
             <div className="subject">
-              <input type="text" name="user_subject" placeholder="Subject" />
+              <input className={!nightMode ? "" : "night"} type="text" name="user_subject" placeholder="Subject" />
             </div>
             <div className="message">
               <textarea
+                className={!nightMode ? "" : "night"}
                 name="user_msg"
                 placeholder="Message..."
                 cols="30"
