@@ -1,7 +1,7 @@
 import React from 'react';
 import vscode from "../img/vs_code.png";
-import jquery from "../img/jquery.png";
 import mysql from "../img/my_sql.png";
+import ts from "../img/ts.png";
 
 const Technologies = ({nightMode}) => {
     return (
@@ -15,7 +15,7 @@ const Technologies = ({nightMode}) => {
                 <div className={!nightMode ? "" : "night"}><i className="fab fa-react"></i>react</div>
                 <div className={!nightMode ? "" : "night"}><i className="fab fa-bootstrap"></i>bootstrap</div>
                 <div className={!nightMode ? "" : "night"}><i className="fab fa-node-js"></i>node.js</div>
-                <div className={!nightMode ? "" : "night"}><img className="jquery" src={jquery} alt="jquery" />jquery</div>
+                <div className={!nightMode ? "" : "night"}><img className="jquery" src={ts} alt="ts" />type script</div>
                 <div className={!nightMode ? "" : "night"}><img className="mysql" src={mysql} alt="my_sql" />mysql</div>
                 <div className={!nightMode ? "" : "night"}><img className="vs_code" src={vscode} alt="vs_code" />vs code</div>
             </div>
