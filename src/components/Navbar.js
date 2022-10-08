@@ -1,8 +1,31 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
-const Navbar = ({nightMode, setNightMode}) => {
+const Navbar = ({ nightMode, setNightMode }) => {
 
     const [menu, setMenu] = useState(false);
+
+    const navList = [
+        {
+            name: "Home",
+            href: "#header"
+        },
+        {
+            name: "About",
+            href: "#about"
+        },
+        {
+            name: "Projects",
+            href: "#projects"
+        },
+        {
+            name: "Technologies",
+            href: "#tech"
+        },
+        {
+            name: "Contact",
+            href: "#contact"
+        }
+    ]
 
     return (
         <div className="navbar">
@@ -13,11 +36,9 @@ const Navbar = ({nightMode, setNightMode}) => {
             </div>
             <div className={menu ? "pages" : "pages unvisible"}>
                 <div className="exit_menu"><i className="fas fa-times" onClick={() => setMenu(false)}></i></div>
-                <span><a className={!nightMode ? "" : "black"} onClick={() => setMenu(false)} href="#header">Home</a></span>
-                <span><a className={!nightMode ? "" : "black"} onClick={() => setMenu(false)} href="#about">About</a></span>
-                <span><a className={!nightMode ? "" : "black"} onClick={() => setMenu(false)} href="#projects">Projects</a></span>
-                <span><a className={!nightMode ? "" : "black"} onClick={() => setMenu(false)} href="#tech">Technologies</a></span>
-                <span><a className={!nightMode ? "" : "black"} onClick={() => setMenu(false)} href="#contact">Contact</a></span>
+                {navList.map((item, index) => (
+                    <span key={index}><a className={!nightMode ? "" : "black"} onClick={() => setMenu(false)} href={item.href}>{item.name}</a></span>
+                ))}
             </div>
             <div className="menu_bars">
                 <i onClick={() => setMenu(true)} className="fas fa-bars"></i>

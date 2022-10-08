@@ -3,21 +3,67 @@ import vscode from "../img/vs_code.png";
 import mysql from "../img/my_sql.png";
 import ts from "../img/ts.png";
 
-const Technologies = ({nightMode}) => {
+const Technologies = ({ nightMode }) => {
+
+    const tech = [
+        {
+            class: "fab fa-html5",
+            name: "html"
+        },
+        {
+            class: "fab fa-css3-alt",
+            name: "css"
+        },
+        {
+            class: "fab fa-sass",
+            name: "scss"
+        },
+        {
+            class: "fab fa-js-square",
+            name: "javascript"
+        },
+        {
+            class: "fab fa-react",
+            name: "react"
+        },
+        {
+            class: "fab fa-bootstrap",
+            name: "bootstrap"
+        },
+        {
+            class: "fab fa-node-js",
+            name: "node.js"
+        }
+    ]
+
+    const techImg = [
+        {
+            class: "jquery",
+            name: "type script",
+            src: ts
+        },
+        {
+            class: "mysql",
+            name: "mysql",
+            src: mysql
+        },
+        {
+            class: "vs_code",
+            name: "vs code",
+            src: vscode
+        },
+    ]
+
     return (
         <div className="technologies" id="tech">
             <h1>Technologies</h1>
             <div className="tech_inner">
-                <div className={!nightMode ? "" : "night"}><i className="fab fa-html5"></i>html</div>
-                <div className={!nightMode ? "" : "night"}><i className="fab fa-css3-alt"></i>css</div>
-                <div className={!nightMode ? "" : "night"}><i className="fab fa-sass"></i>scss</div>
-                <div className={!nightMode ? "" : "night"}><i className="fab fa-js-square"></i>javascript</div>
-                <div className={!nightMode ? "" : "night"}><i className="fab fa-react"></i>react</div>
-                <div className={!nightMode ? "" : "night"}><i className="fab fa-bootstrap"></i>bootstrap</div>
-                <div className={!nightMode ? "" : "night"}><i className="fab fa-node-js"></i>node.js</div>
-                <div className={!nightMode ? "" : "night"}><img className="jquery" src={ts} alt="ts" />type script</div>
-                <div className={!nightMode ? "" : "night"}><img className="mysql" src={mysql} alt="my_sql" />mysql</div>
-                <div className={!nightMode ? "" : "night"}><img className="vs_code" src={vscode} alt="vs_code" />vs code</div>
+                {tech.map((item, index) => (
+                    <div key={index} className={!nightMode ? "" : "night"}><i className={item.class}></i>{item.name}</div>
+                ))}
+                {techImg.map((item, index) => (
+                    <div key={index} className={!nightMode ? "" : "night"}><img className={item.class} src={item.src} alt={item.name} />{item.name}</div>
+                ))}
             </div>
         </div>
     )

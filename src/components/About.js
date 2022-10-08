@@ -15,7 +15,7 @@ const About = ({nightMode}) => {
       <div className="about_text">
         <h2 className="title">About</h2>
         <p className="text">
-        I am a Junior Front End Developer who enjoys to make interactive websites.
+        I am expirienced Front End Developer who enjoys to make interactive websites.
         I spend my free time studying new technologies as well as perfecting existing ones.
         The technology in which I feel most comfortable is the React.JS. 
         When I'm not at the computer, I usually spend time in the gym or with my friends.

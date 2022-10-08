@@ -2,26 +2,32 @@ import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
 import Footer from "./Footer";
 
-const Contact = ({nightMode}) => {
+const Contact = ({ nightMode }) => {
 
   const [message, setMessage] = useState(false);
 
   const formRef = useRef();
 
+  const closeMessage = () => {
+    const timeout = setTimeout(() => {
+      setMessage(false);
+    }, 2000)
+    return () => clearTimeout(timeout);
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_n58a1zi",
-        "template_95entcp",
-        formRef.current,
-        "user_jWZd2H9LGZAs9mcY4SUYH"
-      )
+    emailjs.sendForm(
+      "service_n58a1zi",
+      "template_95entcp",
+      formRef.current,
+      "user_jWZd2H9LGZAs9mcY4SUYH"
+    )
       .then(
         (result) => {
           console.log(result.text);
           setMessage(true);
+          closeMessage();
         },
         (error) => {
           console.log(error.text);

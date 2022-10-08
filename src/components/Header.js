@@ -20,7 +20,7 @@ const Header = ({nightMode, setNightMode}) => {
               <div className="scroll_item">Content Creator</div>
             </div>
           </div>
-          <p className="text">I am focused on creating functional and beautiful web applications</p>
+          <p className="text">I am front end developer who enjoys to make React applications</p>
           <div className="social_network">
             <a href="https://github.com/TimotijevicVlada" target="_blank"rel="noreferrer" ><i className={!nightMode ? "fab fa-github" : "fab fa-github night"}></i></a>
             <a href="https://www.linkedin.com/in/vladimir-timotijevic/" target="_blank" rel="noreferrer"><i className={!nightMode ? "fab fa-linkedin" : "fab fa-linkedin night"}></i></a>

@@ -7,7 +7,7 @@
     padding: 0px 40px;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    scroll-snap-type: y mandatory;
+    // scroll-snap-type: y mandatory;
     height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -25,7 +25,7 @@
         align-items: center;
         padding: 5px 0px;
         z-index: 1;
-         z-index: 3;
+        z-index: 3;
         .logo {
           font-size: 30px;
           width: 50%;
@@ -40,29 +40,28 @@
           justify-content: center;
           font-size: 18px;
           width: 50%;
-         
+
           .exit_menu {
             display: none;
           }
           span {
             margin-right: 10px;
             cursor: pointer;
-            
+
             a {
               color: black;
               text-decoration: none;
-              
+
               &:hover {
                 text-decoration: underline;
               }
             }
-           .black {
-          color: white;
-        }
+            .black {
+              color: white;
+            }
           }
-           
         }
-        
+
         .menu_bars {
           display: none;
         }
@@ -363,7 +362,6 @@
       .tech_inner {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
         div {
           box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
           width: 230px;
@@ -427,10 +425,10 @@
               color: green;
             }
             .fa-envelope {
-              color: blue;
+              color: rgb(54, 54, 175);
             }
             .fa-map-marker-alt {
-              color: red;
+              color: orangered;
             }
           }
         }
@@ -543,7 +541,8 @@
       .footer {
         position: absolute;
         bottom: 20px;
-        left: 32%;
+        left: 50%;
+        transform: translateX(-50%);
         font-size: 18px;
         text-align: center;
         span {
@@ -880,7 +879,6 @@
         }
       }
       .footer {
-        left: 25%;
         bottom: 15px;
       }
     }
@@ -1018,7 +1016,7 @@
         font-size: 30px;
       }
       .tech_inner {
-        justify-content: space-evenly;
+        column-gap: 5px;
         div {
           width: 130px;
           height: 130px;
@@ -1067,9 +1065,6 @@
           }
         }
       }
-      .footer {
-        left: 17%;
-      }
     }
   }
 }
@@ -1077,6 +1072,7 @@
 @media screen and (max-width: 480px) {
   .App {
     .header {
+      height: auto;
       .navbar {
         .logo {
           font-size: 25px;
@@ -1222,7 +1218,7 @@
         }
       }
       .footer {
-        left: 0%;
+        width: 100%;
       }
     }
   }

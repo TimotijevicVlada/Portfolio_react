@@ -1,143 +1,98 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
 }
-
 * .App {
   padding: 0px 40px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
   height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
-
 * .App .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 100vh;
   scroll-snap-align: start;
   position: relative;
 }
-
 * .App .header .navbar {
   position: absolute;
   top: 0;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
   padding: 5px 0px;
   z-index: 1;
   z-index: 3;
 }
-
 * .App .header .navbar .logo {
   font-size: 30px;
   width: 50%;
   position: fixed;
   left: 40px;
 }
-
 * .App .header .navbar .logo .other_color {
-  color: #3cd070;
+  color: rgb(60, 208, 112);
 }
-
 * .App .header .navbar .pages {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-size: 18px;
   width: 50%;
 }
-
 * .App .header .navbar .pages .exit_menu {
   display: none;
 }
-
 * .App .header .navbar .pages span {
   margin-right: 10px;
   cursor: pointer;
 }
-
 * .App .header .navbar .pages span a {
   color: black;
   text-decoration: none;
 }
-
 * .App .header .navbar .pages span a:hover {
   text-decoration: underline;
 }
-
 * .App .header .navbar .pages span .black {
   color: white;
 }
-
 * .App .header .navbar .menu_bars {
   display: none;
 }
-
 * .App .header .navbar .night_mode {
   margin-right: 10px;
   background-color: lightgray;
   cursor: pointer;
   border-radius: 30px;
   width: 65px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 2px 5px;
 }
-
 * .App .header .navbar .night_mode span {
   background-color: gray;
   padding: 2px;
   border-radius: 50%;
   width: 22px;
   height: 22px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-left: 0;
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-
 * .App .header .navbar .night_mode span i {
   color: yellow;
 }
-
 * .App .header .navbar .day span {
   margin-left: 60%;
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-
 * .App .header .fa-chevron-up {
   position: fixed;
   right: 80px;
@@ -148,200 +103,136 @@
   cursor: pointer;
   z-index: 3;
 }
-
 * .App .header .fa-chevron-up:hover {
   color: black;
 }
-
 * .App .header .header_info {
   width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 * .App .header .header_info .info_wrapper {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 * .App .header .header_info .info_wrapper .first_line {
   font-size: 30px;
 }
-
 * .App .header .header_info .info_wrapper .name {
   font-size: 50px;
 }
-
 * .App .header .header_info .info_wrapper .scroll {
   height: 50px;
   overflow: hidden;
 }
-
 * .App .header .header_info .info_wrapper .scroll .scroll_wrapper {
   height: 100%;
   -webkit-animation: move 4s ease-in-out infinite alternate;
           animation: move 4s ease-in-out infinite alternate;
 }
-
 @-webkit-keyframes move {
   50% {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    transform: translateY(-50px);
   }
   100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    transform: translateY(-100px);
   }
 }
-
 @keyframes move {
   50% {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    transform: translateY(-50px);
   }
   100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    transform: translateY(-100px);
   }
 }
-
 * .App .header .header_info .info_wrapper .scroll .scroll_item {
   height: 50px;
   font-size: 30px;
-  color: #3cd070;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  color: rgb(60, 208, 112);
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 * .App .header .header_info .info_wrapper .social_network a {
   text-decoration: none;
   color: black;
 }
-
 * .App .header .header_info .info_wrapper .social_network a i {
   font-size: 30px;
   margin: 10px 10px 0px 0px;
   cursor: pointer;
   cursor: pointer;
 }
-
 * .App .header .header_info .info_wrapper .social_network a i:hover {
-  color: #3cd070;
+  color: rgb(60, 208, 112);
 }
-
 * .App .header .header_info .info_wrapper .social_network a .night {
   color: white;
 }
-
 * .App .header .header_image {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 60%;
   position: relative;
 }
-
 * .App .header .header_image .background_shape {
   -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
-  background-color: #3cd070;
+  background-color: rgb(60, 208, 112);
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: 0;
 }
-
 * .App .header .header_image .black {
-  background-color: #1c8a43;
+  background-color: rgb(28, 138, 67);
 }
-
 * .App .header .header_image img {
   z-index: 2;
 }
-
 * .App .night {
-  background-color: #141414;
+  background-color: rgb(20, 20, 20);
   color: white;
 }
-
 * .App .about {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 100vh;
   scroll-snap-align: start;
 }
-
 * .App .about .about_image {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 * .App .about .about_image img {
   margin-left: 35px;
   width: 400px;
-  -webkit-box-shadow: -35px -35px 0px -1px rgba(0, 0, 0, 0.75);
-          box-shadow: -35px -35px 0px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -35px -35px 0px -1px rgba(0, 0, 0, 0.75);
 }
-
 * .App .about .about_image .night {
-  -webkit-box-shadow: -35px -35px 0px -1px #3d3d3d;
-          box-shadow: -35px -35px 0px -1px #3d3d3d;
+  box-shadow: -35px -35px 0px -1px rgb(61, 61, 61);
 }
-
 * .App .about .about_text {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
-
 * .App .about .about_text .title {
   font-size: 30px;
   font-weight: 200;
 }
-
 * .App .about .about_text .text {
   text-indent: 20px;
 }
-
 * .App .about .about_text .download {
   margin-top: 20px;
 }
-
 * .App .about .about_text .download .download_btn {
   text-decoration: none;
   padding: 5px 10px;
-  background-color: #3cd070;
+  background-color: rgb(60, 208, 112);
   color: white;
   margin-top: 20px;
   text-align: center;
@@ -350,128 +241,81 @@
   cursor: pointer;
   width: 150px;
 }
-
 * .App .about .about_text .download .download_btn:hover {
   background-color: green;
 }
-
 * .App .about .about_text .download .download_btn i {
   margin-left: 10px;
 }
-
 * .App .about .about_text .download .download_msg {
   margin-left: 20px;
   color: green;
   border: 1px solid green;
   padding: 5px;
 }
-
 * .App .projects_wrapper {
   scroll-snap-align: start;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
-
 * .App .projects_wrapper h1 {
   text-align: center;
   font-weight: 200;
   margin: 20px 0px;
 }
-
 * .App .projects_wrapper .projects .carousel {
   padding: 50px;
-  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
   color: white;
 }
-
 * .App .projects_wrapper .projects .carousel .rec-carousel .rec-arrow-left {
   color: white;
-  background-color: #9df8bd;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: rgb(157, 248, 189);
+  box-shadow: none;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 * .App .projects_wrapper .projects .carousel .rec-carousel .rec-arrow-left:hover {
-  background-color: #3cd070;
+  background-color: rgb(60, 208, 112);
 }
-
 * .App .projects_wrapper .projects .carousel .rec-carousel .rec-arrow-right {
   color: white;
-  background-color: #9df8bd;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: rgb(157, 248, 189);
+  box-shadow: none;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 * .App .projects_wrapper .projects .carousel .rec-carousel .rec-arrow-right:hover {
-  background-color: #3cd070;
+  background-color: rgb(60, 208, 112);
 }
-
 * .App .projects_wrapper .projects .carousel .rec-pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 * .App .projects_wrapper .projects .carousel .rec-pagination .rec-dot {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border: 1px solid #3cd070;
+  box-shadow: none;
+  border: 1px solid rgb(60, 208, 112);
 }
-
 * .App .projects_wrapper .projects .carousel .rec-pagination .rec-dot_active {
-  background-color: #3cd070;
+  background-color: rgb(60, 208, 112);
   width: 14px;
   height: 14px;
 }
-
 * .App .projects_wrapper .projects .carousel .project_item {
   width: 270px;
   height: 270px;
   overflow: hidden;
   margin: 15px 5px;
   position: relative;
-  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
 }
-
 * .App .projects_wrapper .projects .carousel .project_item:hover .hidden {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   position: absolute;
   bottom: 10px;
   left: 30px;
@@ -479,22 +323,15 @@
   z-index: 1;
   font-size: 30px;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 * .App .projects_wrapper .projects .carousel .project_item img {
   height: 100%;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 * .App .projects_wrapper .projects .carousel .project_item img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 * .App .projects_wrapper .projects .carousel .project_item .hidden {
   background-color: white;
   display: none;
@@ -502,238 +339,167 @@
   padding: 5px 10px;
   border-radius: 20px;
 }
-
 * .App .projects_wrapper .projects .carousel .project_item .hidden .name {
   font-size: 17px;
   margin-right: 10px;
 }
-
 * .App .projects_wrapper .projects .night {
-  background-color: #3d3d3d;
+  background-color: rgb(61, 61, 61);
 }
-
 * .App .technologies {
   height: 100vh;
   scroll-snap-align: start;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
-
 * .App .technologies h1 {
   text-align: center;
   font-weight: 200;
   margin: 20px 0px;
 }
-
 * .App .technologies .tech_inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-
 * .App .technologies .tech_inner div {
-  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
   width: 230px;
   height: 230px;
   margin: 15px 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 * .App .technologies .tech_inner div i {
   font-size: 100px;
 }
-
 * .App .technologies .tech_inner div .jquery {
   width: 130px;
 }
-
 * .App .technologies .tech_inner div .mysql {
   width: 120px;
 }
-
 * .App .technologies .tech_inner div .vs_code {
   width: 95px;
 }
-
 * .App .technologies .tech_inner .night {
-  background-color: #3d3d3d;
+  background-color: rgb(61, 61, 61);
 }
-
 * .App .contact {
   position: relative;
   height: 100vh;
   scroll-snap-align: start;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
-
 * .App .contact .title {
   text-align: center;
   font-size: 30px;
   margin: 20px 0px;
 }
-
 * .App .contact .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 * .App .contact .content .contact_left {
   width: 50%;
 }
-
 * .App .contact .content .contact_left .get_in_touch h2 {
   font-weight: 200;
   margin-bottom: 20px;
 }
-
 * .App .contact .content .contact_left .phone,
 * .App .contact .content .contact_left .email,
 * .App .contact .content .contact_left .location {
   margin-bottom: 10px;
   font-size: 20px;
 }
-
 * .App .contact .content .contact_left .phone i,
 * .App .contact .content .contact_left .email i,
 * .App .contact .content .contact_left .location i {
   font-size: 25px;
   margin-right: 20px;
 }
-
 * .App .contact .content .contact_left .phone .fa-phone,
 * .App .contact .content .contact_left .email .fa-phone,
 * .App .contact .content .contact_left .location .fa-phone {
   color: green;
 }
-
 * .App .contact .content .contact_left .phone .fa-envelope,
 * .App .contact .content .contact_left .email .fa-envelope,
 * .App .contact .content .contact_left .location .fa-envelope {
-  color: blue;
+  color: rgb(54, 54, 175);
 }
-
 * .App .contact .content .contact_left .phone .fa-map-marker-alt,
 * .App .contact .content .contact_left .email .fa-map-marker-alt,
 * .App .contact .content .contact_left .location .fa-map-marker-alt {
-  color: red;
+  color: orangered;
 }
-
 * .App .contact .content .contact_right {
   width: 50%;
 }
-
 * .App .contact .content .contact_right .contact_form h2 {
   font-weight: 200;
   margin-bottom: 10px;
 }
-
 * .App .contact .content .contact_right .contact_form .name_email {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 10px;
 }
-
 * .App .contact .content .contact_right .contact_form .name_email .name {
   width: 50%;
   margin-right: 10px;
 }
-
 * .App .contact .content .contact_right .contact_form .name_email .name input {
   width: 100%;
   padding: 5px;
   font-size: 17px;
   border: 1px solid lightgray;
 }
-
 * .App .contact .content .contact_right .contact_form .name_email .name input:focus {
   outline: none;
 }
-
 * .App .contact .content .contact_right .contact_form .name_email .name .night {
-  background-color: #3d3d3d;
+  background-color: rgb(61, 61, 61);
   color: white;
   border: none;
 }
-
 * .App .contact .content .contact_right .contact_form .name_email .email {
   width: 50%;
 }
-
 * .App .contact .content .contact_right .contact_form .name_email .email input {
   width: 100%;
   padding: 5px;
   font-size: 17px;
   border: 1px solid lightgray;
 }
-
 * .App .contact .content .contact_right .contact_form .name_email .email input:focus {
   outline: none;
 }
-
 * .App .contact .content .contact_right .contact_form .name_email .email .night {
-  background-color: #3d3d3d;
+  background-color: rgb(61, 61, 61);
   color: white;
   border: none;
 }
-
 * .App .contact .content .contact_right .contact_form .subject {
   margin-bottom: 10px;
 }
-
 * .App .contact .content .contact_right .contact_form .subject input {
   width: 100%;
   padding: 5px;
   font-size: 17px;
   border: 1px solid lightgray;
 }
-
 * .App .contact .content .contact_right .contact_form .subject input:focus {
   outline: none;
 }
-
 * .App .contact .content .contact_right .contact_form .subject .night {
-  background-color: #3d3d3d;
+  background-color: rgb(61, 61, 61);
   color: white;
   border: none;
 }
-
 * .App .contact .content .contact_right .contact_form .message textarea {
   width: 100%;
   padding: 5px;
@@ -741,55 +507,47 @@
   border: 1px solid lightgray;
   font-family: "Poppins", sans-serif;
 }
-
 * .App .contact .content .contact_right .contact_form .message textarea:focus {
   outline: none;
 }
-
 * .App .contact .content .contact_right .contact_form .message .night {
-  background-color: #3d3d3d;
+  background-color: rgb(61, 61, 61);
   color: white;
   border: none;
 }
-
 * .App .contact .content .contact_right .contact_form .btn button {
   color: white;
   padding: 10px;
   font-size: 18px;
   border: none;
-  background-color: #3cd070;
+  background-color: rgb(60, 208, 112);
   cursor: pointer;
 }
-
 * .App .contact .content .contact_right .contact_form .btn button:hover {
   background-color: green;
 }
-
 * .App .contact .content .contact_right .contact_form .btn .msg_successfull {
   margin-left: 20px;
   color: green;
   padding: 5px;
   border: 1px solid green;
 }
-
 * .App .contact .content .contact_right .contact_form .btn .msg_successfull i {
   font-size: 20px;
 }
-
 * .App .contact .footer {
   position: absolute;
   bottom: 20px;
-  left: 32%;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 18px;
   text-align: center;
 }
-
 * .App .contact .footer span {
-  color: #3cd070;
+  color: rgb(60, 208, 112);
 }
-
 * .night {
-  background-color: #141414;
+  background-color: rgb(20, 20, 20);
   color: white;
 }
 
@@ -799,10 +557,7 @@
   }
   .App .header {
     height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     scroll-snap-align: none;
   }
   .App .header .navbar .logo {
@@ -811,20 +566,14 @@
     left: 10px;
   }
   .App .header .navbar .pages {
-    background-color: #3cd070;
+    background-color: rgb(60, 208, 112);
     width: 70%;
     height: 70%;
     position: fixed;
     top: 0;
-    right: -0%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-transition: all 0.4s ease;
+    right: 0%;
+    flex-direction: column;
+    align-items: center;
     transition: all 0.4s ease;
     z-index: 4;
   }
@@ -855,7 +604,7 @@
     top: 10px;
   }
   .App .header .navbar .menu_bars:hover {
-    color: #3cd070;
+    color: rgb(60, 208, 112);
   }
   .App .header .navbar .night_mode {
     margin-right: 50px;
@@ -874,9 +623,7 @@
   }
   .App .header .header_info .info_wrapper {
     margin-top: 45px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .App .header .header_info .info_wrapper .first_line {
     font-size: 35px;
@@ -889,22 +636,18 @@
   }
   @-webkit-keyframes move {
     50% {
-      -webkit-transform: translateY(-40px);
-              transform: translateY(-40px);
+      transform: translateY(-40px);
     }
     100% {
-      -webkit-transform: translateY(-80px);
-              transform: translateY(-80px);
+      transform: translateY(-80px);
     }
   }
   @keyframes move {
     50% {
-      -webkit-transform: translateY(-40px);
-              transform: translateY(-40px);
+      transform: translateY(-40px);
     }
     100% {
-      -webkit-transform: translateY(-80px);
-              transform: translateY(-80px);
+      transform: translateY(-80px);
     }
   }
   .App .header .header_info .info_wrapper .scroll .scroll_item {
@@ -927,24 +670,18 @@
   .App .about {
     height: auto;
     margin-top: 30px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     scroll-snap-align: none;
   }
   .App .about .about_image {
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .App .about .about_image img {
     margin-top: 40px;
     width: 60%;
     margin-left: 0px;
-    -webkit-box-shadow: -20px -20px 0px -1px rgba(0, 0, 0, 0.75);
-            box-shadow: -20px -20px 0px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -20px -20px 0px -1px rgba(0, 0, 0, 0.75);
   }
   .App .about .about_text {
     width: 100%;
@@ -960,16 +697,9 @@
   }
   .App .about .about_text .download {
     margin-top: 15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .App .about .about_text .download .download_btn {
     margin-top: 0px;
@@ -990,8 +720,7 @@
   }
   .App .projects_wrapper .projects .carousel {
     padding: 10px 0px;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     position: relative;
   }
   .App .projects_wrapper .projects .carousel .rec-carousel .rec-arrow-left {
@@ -1047,9 +776,7 @@
     margin: 10px 0px;
   }
   .App .technologies .tech_inner {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
   .App .technologies .tech_inner div {
     width: 200px;
@@ -1078,10 +805,7 @@
     font-size: 35px;
   }
   .App .contact .content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .App .contact .content .contact_left {
     width: 100%;
@@ -1096,10 +820,7 @@
     text-align: center;
   }
   .App .contact .content .contact_right .contact_form .name_email {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .App .contact .content .contact_right .contact_form .name_email .name {
     width: 100%;
@@ -1121,13 +842,8 @@
     font-size: 22px;
   }
   .App .contact .content .contact_right .contact_form .btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .App .contact .content .contact_right .contact_form .btn button {
     width: 100%;
@@ -1143,27 +859,22 @@
     font-size: 22px;
   }
   .App .contact .footer {
-    left: 25%;
     bottom: 15px;
   }
 }
-
 @media screen and (max-width: 1024px) {
   .App .header .navbar .projects_wrapper .projects .carousel .rec-carousel .rec-slider-container .rec-slider .rec-swipable .rec-carousel-item .rec-item-wrapper .project_item {
     width: 230px;
     height: 230px;
   }
   .App .header .navbar .technologies .tech_inner {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    justify-content: space-evenly;
   }
   .App .header .navbar .technologies .tech_inner div {
     width: 140px;
     height: 140px;
   }
 }
-
 @media screen and (max-width: 768px) {
   .App {
     padding: 0px 5px;
@@ -1229,9 +940,8 @@
     font-size: 30px;
   }
   .App .technologies .tech_inner {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
   }
   .App .technologies .tech_inner div {
     width: 130px;
@@ -1262,12 +972,11 @@
   .App .contact .content .contact_right .contact_form .btn .msg_successfull {
     font-size: 20px;
   }
-  .App .contact .footer {
-    left: 17%;
-  }
 }
-
 @media screen and (max-width: 480px) {
+  .App .header {
+    height: auto;
+  }
   .App .header .navbar .logo {
     font-size: 25px;
     top: 5px;
@@ -1371,7 +1080,6 @@
     font-size: 18px;
   }
   .App .contact .footer {
-    left: 0%;
+    width: 100%;
   }
-}
-/*# sourceMappingURL=App.css.map */
+}/*# sourceMappingURL=App.css.map */
