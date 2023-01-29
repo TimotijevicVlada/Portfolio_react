@@ -3,9 +3,6 @@ import Me from "../img/about_image.jpg";
 
 const About = ({nightMode}) => {
 
-  const [download, setDownload] = useState(false);
-
-
   return (
     <div className="about" id="about">
       <div className="about_image">
