@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import Me from "../img/about_image.jpg";
-import resume from "../resume/resume.pdf";
 
 const About = ({nightMode}) => {
 
@@ -28,10 +27,6 @@ const About = ({nightMode}) => {
         <p className="text">
         In the future I have the ambition to become a complete Front End Developer with knowledge of few frameworks as well as to learn some of the Back End technologies.
         </p>
-        <div className="download">
-          <a href={resume} onClick={() => setDownload(true)} className="download_btn" download>Resume<i className="fas fa-download"></i></a>
-          {download && <span className="download_msg">Downloaded successfuly <i className="fas fa-check"></i></span>}
-        </div>
       </div>
     </div>
   );
