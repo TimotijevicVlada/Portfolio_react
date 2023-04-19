@@ -33,7 +33,7 @@ const Technologies = ({ nightMode }) => {
         {
             class: "fab fa-node-js",
             name: "node.js"
-        }
+        },
     ]
 
     const techImg = [
