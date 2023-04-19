@@ -15,12 +15,12 @@ const Header = ({nightMode, setNightMode}) => {
           <span className="name">Vladimir Timotijevic</span>
           <div className="scroll">
             <div className="scroll_wrapper">
-              <div className="scroll_item">Front-End Developer</div>
+              <div className="scroll_item">Full Stack Developer</div>
               <div className="scroll_item">Web Designer</div>
               <div className="scroll_item">Content Creator</div>
             </div>
           </div>
-          <p className="text">I am front end developer who enjoys to make React applications</p>
+          <p className="text">I am full stack developer who enjoys to make React/Node.js applications</p>
           <div className="social_network">
             <a href="https://github.com/TimotijevicVlada" target="_blank"rel="noreferrer" ><i className={!nightMode ? "fab fa-github" : "fab fa-github night"}></i></a>
             <a href="https://www.linkedin.com/in/vladimir-timotijevic/" target="_blank" rel="noreferrer"><i className={!nightMode ? "fab fa-linkedin" : "fab fa-linkedin night"}></i></a>
